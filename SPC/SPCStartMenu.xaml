@@ -27,7 +27,7 @@
             <TextBlock Text="Erstellen" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" ></TextBlock>
             <Button Grid.Row="1" Width="100" Height="100">
                 <StackPanel>
-                    <Image Source="Pictures/new_graphic.png"/>
+                    <Image Source="Pictures/open_graphic.png"/>
                 </StackPanel>
             </Button>
             <TextBlock Grid.Row="1" Text="Vorhandene Datei suchen" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
