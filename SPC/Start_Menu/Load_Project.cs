@@ -8,5 +8,17 @@ namespace SPC.Start_Menu
 {
     class Load_Project
     {
+        private String name;
+
+        public Load_Project(String name)
+        {
+            this.name = name;
+            loadFile(name);
+        }
+        
+        public void loadFile(String name)
+        {
+
+        }
     }
 }
