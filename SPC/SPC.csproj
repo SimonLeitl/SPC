@@ -137,7 +137,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Pictures\new_graphic.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\08-Mercedes-AMG-E-63-S-4MATIC+-4k.jpg" />
   </ItemGroup>
