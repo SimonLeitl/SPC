@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -58,7 +60,9 @@
     <Compile Include="Editor\Export.cs" />
     <Compile Include="Interfaces\Comp_Interface.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="Start_Menu\Load_Project.cs" />
+    <Compile Include="Start_Menu\Load_Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Start_Menu\New_Project.cs" />
     <Compile Include="Start_Menu\Used_Project.cs" />
     <Page Include="MainWindow.xaml">
