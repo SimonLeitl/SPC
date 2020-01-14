@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SPC.Start_Menu.New_Project">
-    <Position X="10" Y="1.5" Width="1.5" />
+    <Position X="3.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQABAAAAAAAAAEAAAAAAAAAAAAEAAAAAAAAEAAAAAA=</HashCode>
       <FileName>Start_Menu\New_Project.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SPC.Start_Menu.Load_Project">
-    <Position X="10" Y="4.25" Width="1.5" />
+    <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAABAABAAAAAAAEAAAAAAAABAAAIAA=</HashCode>
       <FileName>Start_Menu\Load_Project.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SPC.Components.Component" Collapsed="true">
-    <Position X="3.25" Y="2.25" Width="1.5" />
+    <Position X="6" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Components\Component.cs</FileName>

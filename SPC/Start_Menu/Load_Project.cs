@@ -14,20 +14,15 @@ namespace SPC.Start_Menu
 {
     public class Load_Project : Form
     {
-        private String name;
-
-        public static void Main()
-        {
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.EnableVisualStyles();
-            Application.Run(new Load_Project());
-        }
-
         private Button selectButton;
         private OpenFileDialog loadProject1;
 
         public Load_Project()
         {
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.EnableVisualStyles();
+            Application.Run(new Load_Project());
+
             loadProject1 = new OpenFileDialog()
             {
                 FileName = "Wähle eine Datei aus",
@@ -63,6 +58,13 @@ namespace SPC.Start_Menu
                     MessageBox.Show($"Security error. message: {ex.Message}" + $"Details: {ex.StackTrace}");
                 }
             }
-        }       
+        }   
+        
+        public void test()
+        {
+
+        }
     }
+    
+  
 }
