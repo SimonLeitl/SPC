@@ -34,7 +34,6 @@ namespace SPC.Start_Menu
         {
             if (Directory.Exists("Saving"))
             {
-                
                 return true;
             }
             else
