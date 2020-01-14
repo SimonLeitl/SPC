@@ -12,17 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SPC.Start_Menu;
-
 
 namespace SPC
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für SPCStartMenu.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class SPCStartMenu : Page
     {
-        public MainWindow()
+        public SPCStartMenu()
         {
             InitializeComponent();
         }
