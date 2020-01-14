@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace SPC
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für SPCEditor.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class SPCEditor : Page
     {
-        public MainWindow()
+        public SPCEditor()
         {
             InitializeComponent();
         }
