@@ -87,7 +87,6 @@
     <Compile Include="SPCStartMenu.xaml.cs">
       <DependentUpon>SPCStartMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Start_Menu\Load_Project.cs" />
     <Compile Include="Start_Menu\Load_Project.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,9 +144,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\new_graphic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Pictures\08-Mercedes-AMG-E-63-S-4MATIC+-4k.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\open_graphic.png" />

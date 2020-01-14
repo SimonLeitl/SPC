@@ -39,11 +39,11 @@ namespace SPC.Start_Menu
 
             selectButton.Click += new EventHandler(selectButton_Click);
             Controls.Add(selectButton);
-        } 
+        }
 
         private void selectButton_Click(object sender, EventArgs e)
         {
-            if(loadProject1.ShowDialog() == DialogResult.OK)
+            if (loadProject1.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
@@ -58,13 +58,13 @@ namespace SPC.Start_Menu
                     MessageBox.Show($"Security error. message: {ex.Message}" + $"Details: {ex.StackTrace}");
                 }
             }
-        }   
-        
+        }
+
         public void test()
         {
 
         }
     }
-    
-  
+
+
 }
