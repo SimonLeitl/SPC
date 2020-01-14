@@ -58,6 +58,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -86,6 +88,9 @@
       <DependentUpon>SPCStartMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Start_Menu\Load_Project.cs" />
+    <Compile Include="Start_Menu\Load_Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Start_Menu\New_Project.cs" />
     <Compile Include="Start_Menu\Used_Project.cs" />
     <Page Include="MainWindow.xaml">
@@ -129,6 +134,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
