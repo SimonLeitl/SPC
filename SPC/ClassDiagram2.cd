@@ -46,7 +46,7 @@
   <Class Name="SPC.SPCStartMenu">
     <Position X="1" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>SPCStartMenu.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

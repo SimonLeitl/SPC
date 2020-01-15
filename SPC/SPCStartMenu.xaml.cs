@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SPC.Start_Menu;
+using Microsoft.Win32;
 
 namespace SPC
 {
@@ -28,12 +29,20 @@ namespace SPC
 
         private void NewProjectbutton_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //Funktion für neues Projektanlegen
+            // Hier muss der Projektname der vom User ausgewählt wurde eingesetzt werden. 
+            new New_Project("test");
         }
 
         private void LoadProjectButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            new Load_Project();
+            
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Text files (*txt)|*.txt";
+            if (openFileDialog.ShowDialog() == true)
+            {
+
+            }
+            
         }
     }
 }
