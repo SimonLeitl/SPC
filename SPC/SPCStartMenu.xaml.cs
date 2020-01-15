@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SPC.Start_Menu;
 
 namespace SPC
 {
@@ -23,6 +24,16 @@ namespace SPC
         public SPCStartMenu()
         {
             InitializeComponent();
+        }
+
+        private void NewProjectbutton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //Funktion für neues Projektanlegen
+        }
+
+        private void LoadProjectButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            new Load_Project();
         }
     }
 }

@@ -14,8 +14,10 @@ namespace SPC.Start_Menu
 {
     public class Load_Project : Form
     {
+    
+
         private Button selectButton;
-        private OpenFileDialog loadProject1;
+        private System.Windows.Forms.OpenFileDialog loadProject1;
 
         public Load_Project()
         {
@@ -23,7 +25,7 @@ namespace SPC.Start_Menu
             Application.EnableVisualStyles();
             Application.Run(new Load_Project());
 
-            loadProject1 = new OpenFileDialog()
+            loadProject1 = new System.Windows.Forms.OpenFileDialog()
             {
                 FileName = "Wähle eine Datei aus",
                 Filter = "Text files (*.txt)|*.txt",
