@@ -80,6 +80,9 @@
     </ApplicationDefinition>
     <Compile Include="Editor\Export.cs" />
     <Compile Include="Interfaces\Comp_Interface.cs" />
+    <Compile Include="ProjektNameEingabe.xaml.cs">
+      <DependentUpon>ProjektNameEingabe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="SPCEditor.xaml.cs">
       <DependentUpon>SPCEditor.xaml</DependentUpon>
@@ -105,6 +108,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ProjektNameEingabe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SPCEditor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
