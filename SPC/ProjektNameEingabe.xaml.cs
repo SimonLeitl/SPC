@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SPC.Start_Menu;
 
 namespace SPC
 {
@@ -22,6 +23,14 @@ namespace SPC
         public ProjektNameEingabe()
         {
             InitializeComponent();
+        }
+
+        private void WeiterButton_Click(object sender, RoutedEventArgs e)
+        {
+            String projektname;
+            projektname = projektNameTextFeld.Text;
+            new New_Project(projektname);
+            this.Close();
         }
     }
 }
