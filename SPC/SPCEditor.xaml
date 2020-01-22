@@ -51,9 +51,9 @@
                         <TextBox AcceptsReturn="True" />
                     </DockPanel>
                     <DockPanel Grid.Row="1" x:Name="draw">
+                        <TextBlock Text="Toolbox" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" ></TextBlock>
                     </DockPanel>
                 </Grid>
-                <TextBlock Text="Toolbox" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" ></TextBlock>
                 <Canvas  Grid.Row="1" x:Name="EditorCnv"></Canvas>
             </Grid>
         </Grid>
