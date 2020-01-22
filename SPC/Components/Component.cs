@@ -8,5 +8,6 @@ namespace SPC.Components
 {
    public abstract class Component
     {
+
     }
 }

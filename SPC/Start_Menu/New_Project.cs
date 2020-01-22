@@ -26,6 +26,7 @@ namespace SPC.Start_Menu
             else
             {
                 createDirectory();
+                createFile();
             }
         }
 
@@ -34,7 +35,6 @@ namespace SPC.Start_Menu
         {
             if (Directory.Exists("Saving"))
             {
-                
                 return true;
             }
             else
@@ -47,12 +47,17 @@ namespace SPC.Start_Menu
         public void createDirectory()
         {
             Directory.CreateDirectory("Savings");
+           
         }
         
-        //Erstellt das Datei Format
+        //Erstellt eine Datei im Format txt mit dem übergebenem Projektnamen. 
         public void createFile()
         {
-
+            String path = "savings/" + name + ".txt";
+            using (FileStream fs = File.Create(path))
+            {
+              
+            }
         }
     }
 }
