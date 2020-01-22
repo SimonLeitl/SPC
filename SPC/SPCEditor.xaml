@@ -21,8 +21,22 @@
                     <RowDefinition Height="3*"/>
                     <RowDefinition Height="10.5*"/>
                 </Grid.RowDefinitions>
-               
-               
+              
+                <DockPanel>
+                    <ToolBarTray DockPanel.Dock="Top">
+                        <ToolBar>
+                            <Button Command="New" Content="New" />
+                            <Button Command="Open" Content="Open" />
+                            <Button Command="Save" Content="Save" />
+                        </ToolBar>
+                        <ToolBar>
+                            <Button Command="Cut" Content="Cut" />
+                            <Button Command="Copy" Content="Copy" />
+                            <Button Command="Paste" Content="Paste" />
+                        </ToolBar>
+                    </ToolBarTray>
+                    <TextBox AcceptsReturn="True" />
+                </DockPanel>
                 <TextBlock Text="Toolbox" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" ></TextBlock>
                 <Canvas  Grid.Row="1" x:Name="EditorCnv"></Canvas>
             </Grid>
