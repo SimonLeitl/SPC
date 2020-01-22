@@ -14,9 +14,9 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <TextBlock Text="Projektname eingeben" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" ></TextBlock>
-            <TextBox x:Name="projektNameTextFeld" Grid.Row="1" Text="Hier eingeben!" FontSize="18" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Width="450" />
-            <Button x:Name="zurückButton" Grid.Row="1" Content="Zurück" Width="94" Height="33" VerticalAlignment="Bottom" Margin="281,0,425,78"></Button>
-            <Button x:Name="weiterButton" Grid.Row="1" Content="Weiter" Width="94" Height="33" VerticalAlignment="Bottom" Margin="425,0,281,78" Click="WeiterButton_Click"></Button>
+            <TextBox x:Name="projektNameTextFeld" Grid.Row="1" Text="Hier eingeben!" FontSize="18" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="170,0.333,201.333,0" Width="422" />
+            <Button x:Name="zurückButton" Grid.Row="1" Content="Zurück" Width="94" Height="33" VerticalAlignment="Bottom" Margin="277,0,422.333,77.667"></Button>
+            <Button x:Name="weiterButton" Grid.Row="1" Content="Weiter" Width="94" Height="33" VerticalAlignment="Bottom" Margin="422,99.333,277.333,77.667" Click="WeiterButton_Click"></Button>
         </Grid>
 
     </Grid>
