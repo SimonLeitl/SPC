@@ -8,7 +8,54 @@
       d:DesignHeight="350" d:DesignWidth="500"
       Title="SPC - Editor">
 
-    <Grid>
-        
+    <Grid ShowGridLines="True">
+        <Grid ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10.5*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" ShowGridLines="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="4.5*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Components" FontSize="18" HorizontalAlignment="Center"></TextBlock>
+                <DockPanel  x:Name="comp" Grid.Row="1">
+                    <Button x:Name="test" DockPanel.Dock="Top" Height="30">test</Button>
+                    <Button x:Name="test2" DockPanel.Dock="Top" Height="30">test2</Button>
+                </DockPanel>
+            </Grid>
+            <Grid  ShowGridLines="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="10.5*"/>
+                </Grid.RowDefinitions>
+                <Grid ShowGridLines="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1.5*"/>
+                    </Grid.RowDefinitions>
+                    <DockPanel x:Name="EditorToolbox">
+                        <ToolBarTray DockPanel.Dock="Top">
+                            <ToolBar>
+                                <Button x:Name="new" Command="New" Content="New" />
+                                <Button x:Name="opn" Command="Open" Content="Open" />
+                                <Button x:Name="save" Command="Save" Content="Save" />
+                            </ToolBar>
+                            <ToolBar>
+                                <Button x:Name="cut" Command="Cut" Content="Cut" />
+                                <Button x:Name="copy" Command="Copy" Content="Copy" />
+                                <Button x:Name="paste" Command="Paste" Content="Paste" />
+                            </ToolBar>
+                        </ToolBarTray>
+                        <TextBox AcceptsReturn="True" />
+                    </DockPanel>
+                    <DockPanel Grid.Row="1" x:Name="draw">
+                        <TextBlock Text="Toolbox" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" ></TextBlock>
+                    </DockPanel>
+                </Grid>
+                <Canvas  Grid.Row="1" x:Name="EditorCnv"></Canvas>
+            </Grid>
+        </Grid>
     </Grid>
 </Page>
