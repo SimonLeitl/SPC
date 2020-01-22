@@ -18,7 +18,7 @@ namespace SPC
     /// <summary>
     /// Interaktionslogik für ProjektNameEingabe.xaml
     /// </summary>
-    public partial class ProjektNameEingabe : Window
+    public partial class ProjektNameEingabe : Page
     {
         public ProjektNameEingabe()
         {
@@ -30,7 +30,16 @@ namespace SPC
             String projektname;
             projektname = projektNameTextFeld.Text;
             new New_Project(projektname);
-            this.Close();
+
+            SPCEditor e1 = new SPCEditor();
+            NavigationService.Navigate(e1);   
+            
+        }
+
+        private void ZurückButton_Click(object sender, RoutedEventArgs e)
+        {
+            SPC.SPCStartMenu ssm1 = new SPCStartMenu();
+            NavigationService.Navigate(ssm1);
         }
     }
 }
