@@ -9,6 +9,38 @@
       Title="SPC - Editor">
 
     <Grid>
-        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10.5*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1" Text="Components" FontSize="18" HorizontalAlignment="Center"></TextBlock>
+
+            <Grid  ShowGridLines="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="10.5*"/>
+                </Grid.RowDefinitions>
+              
+                <DockPanel x:Name="EditorToolbox">
+                    <ToolBarTray DockPanel.Dock="Top">
+                        <ToolBar>
+                            <Button x:Name="new" Command="New" Content="New" />
+                            <Button x:Name="opn" Command="Open" Content="Open" />
+                            <Button x:Name="save" Command="Save" Content="Save" />
+                        </ToolBar>
+                        <ToolBar>
+                            <Button x:Name="cut" Command="Cut" Content="Cut" />
+                            <Button x:Name="copy" Command="Copy" Content="Copy" />
+                            <Button x:Name="paste" Command="Paste" Content="Paste" />
+                        </ToolBar>
+                    </ToolBarTray>
+                    <TextBox AcceptsReturn="True" />
+                </DockPanel>
+                <TextBlock Text="Toolbox" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" ></TextBlock>
+                <Canvas  Grid.Row="1" x:Name="EditorCnv"></Canvas>
+            </Grid>
+        </Grid>
+
     </Grid>
 </Page>
