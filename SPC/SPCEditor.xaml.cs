@@ -20,9 +20,14 @@ namespace SPC
     /// </summary>
     public partial class SPCEditor : Page
     {
+
         public SPCEditor()
         {
             InitializeComponent();
         }
+
+
+
     }
+    
 }

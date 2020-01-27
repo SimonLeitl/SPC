@@ -22,6 +22,8 @@ namespace SPC
     /// </summary>
     public partial class MainWindow : NavigationWindow
     {
+        internal static System.Windows.WindowState windowState;
+
         public MainWindow()
         {
             InitializeComponent();

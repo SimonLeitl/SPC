@@ -32,7 +32,7 @@ namespace SPC
             new New_Project(projektname);
 
             SPCEditor e1 = new SPCEditor();
-            NavigationService.Navigate(e1);   
+            NavigationService.Navigate(e1);
             
         }
 
