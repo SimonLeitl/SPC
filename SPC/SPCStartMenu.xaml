@@ -32,7 +32,15 @@
             </Button>
             <TextBlock Grid.Row="1" Text="Öffnen" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
         </Grid>
-        <TextBlock Text="Dateien" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" />
+         <!--<TextBlock Text="Dateien" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" /> -->
+        <ListView x:Name="viewUsedProjects">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Projekte" DisplayMemberBinding="{Binding ProjectView}"/>
+                    <!-- <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding CreationDate}"/> -->
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>
     
