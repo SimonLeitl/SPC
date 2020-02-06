@@ -7,25 +7,26 @@
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="500"
       Title="SPC - StartMenu">
-    <Grid ShowGridLines="True">
+    <Grid>
+        <!--ShowGridLines="True"-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1.5*"/>
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-
-        <Grid Grid.Column="1" ShowGridLines="True">
+        <Grid Grid.Column="1">
+            <!-- ShowGridLines="True"-->
             <Grid.RowDefinitions>
                 <RowDefinition>
                 </RowDefinition>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button Width="100" Height="100" Background="#00000000" BorderBrush="{x:Null}">
+            <Button Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00000000" BorderBrush="{x:Null}">
                 <StackPanel>
                     <Image x:Name="newProjectbutton" Source="Pictures/new_graphic.png" MouseDown="NewProjectbutton_MouseDown" />
                 </StackPanel>
             </Button>
             <TextBlock Text="Erstellen" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" ></TextBlock>
-            <Button Grid.Row="1" Width="100" Height="100" Background="#00000000" BorderBrush="{x:Null}">
+            <Button Grid.Row="1" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00000000" BorderBrush="{x:Null}">
                 <StackPanel>
                     <Image x:Name="LoadProjectButton" Source="Pictures/open_graphic.png" MouseDown="LoadProjectButton_MouseDown"/>
                 </StackPanel>
@@ -33,14 +34,14 @@
             <TextBlock Grid.Row="1" Text="Öffnen" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
         </Grid>
          <!--<TextBlock Text="Dateien" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" /> -->
-        <ListView x:Name="viewUsedProjects">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Projekte" DisplayMemberBinding="{Binding ProjectView}"/>
-                    <!-- <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding CreationDate}"/> -->
-                </GridView>
-            </ListView.View>
-        </ListView>
+            <ListView x:Name="viewUsedProjects" Background="Azure">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Projekte" DisplayMemberBinding="{Binding ProjectView}"/>
+                        <!-- <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding CreationDate}"/> -->
+                    </GridView>
+                </ListView.View>
+            </ListView>
     </Grid>
 </Page>
     
