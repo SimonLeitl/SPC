@@ -37,7 +37,8 @@
         <ListView x:Name="viewUsedProjects" Background="#067FC9">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Projekte" DisplayMemberBinding="{Binding viewProjectFiles}"/>
+                    <GridViewColumn Header="Projekte"/>
+                    <!-- DisplayMemberBinding="{Binding viewProjectFiles}" -->
                     <!-- <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding CreationDate}"/> -->
                 </GridView>
             </ListView.View>
