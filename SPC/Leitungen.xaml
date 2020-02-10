@@ -17,7 +17,7 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
             <ListBoxItem>
-                <TextBlock>Test der 1.Leitnung</TextBlock>
+                <TextBlock>Test der 1.Leitung</TextBlock>
             </ListBoxItem>
         </ListBox>
             
