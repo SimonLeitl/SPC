@@ -79,7 +79,16 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Editor\Export.cs" />
+    <Compile Include="Grundelemente.xaml.cs">
+      <DependentUpon>Grundelemente.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Comp_Interface.cs" />
+    <Compile Include="Komponenten.xaml.cs">
+      <DependentUpon>Komponenten.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Leitungen.xaml.cs">
+      <DependentUpon>Leitungen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ProjektNameEingabe.xaml.cs">
       <DependentUpon>ProjektNameEingabe.xaml</DependentUpon>
     </Compile>
@@ -95,6 +104,18 @@
     </Compile>
     <Compile Include="Start_Menu\New_Project.cs" />
     <Compile Include="Start_Menu\Used_Project.cs" />
+    <Page Include="Grundelemente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Komponenten.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Leitungen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

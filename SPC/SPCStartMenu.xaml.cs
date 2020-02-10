@@ -36,18 +36,17 @@ namespace SPC
 
            arrayList = new ArrayList();
            viewProjectFiles = Directory.GetFiles(path);
+           // test = new TextBlock();
            for (int i = 1; i <= viewProjectFiles.Length; i++)
            {
-                arrayList.Add(viewProjectFiles[i-1]);
-                 // viewUsedProjects.Items.Add(viewProjectFiles[i-1]);
-            };
-           viewUsedProjects.ItemsSource = arrayList;
-            
+               viewProjectFiles[i - 1].ToString();
+               arrayList.Add(viewProjectFiles[i - 1]);
+              // test.Text = viewProjectFiles[i - 1];
 
-
-
-
-
+               // viewUsedProjects.Items.Add(viewProjectFiles[i-1]);
+           };
+        
+          viewUsedProjects.ItemsSource = arrayList;
         }
 
         private void NewProjectbutton_MouseDown(object sender, MouseButtonEventArgs e)

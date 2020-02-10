@@ -5,9 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SPC"
       mc:Ignorable="d" 
-      d:DesignHeight="350" d:DesignWidth="500"
+      d:DesignHeight="400" d:DesignWidth="550"
       Title="SPC - StartMenu">
-    <Grid Background="Azure">
+    <Grid Background="#31508E">
         <!--ShowGridLines="True"-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1.5*"/>
@@ -20,13 +20,13 @@
                 </RowDefinition>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button x:Name="newProjectbutton2" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Background="Beige" BorderBrush="{x:Null}">
+            <Button x:Name="newProjectbutton2" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}">
                 <StackPanel>
                     <Image x:Name="newProjectbutton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" MaxHeight="150" MaxWidth="150" Source="Pictures/new_graphic.png" MouseDown="NewProjectbutton_MouseDown"/>
                 </StackPanel>
             </Button>
             <TextBlock Text="Erstellen" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" ></TextBlock>
-            <Button x:Name="LoadProjectButton2" Grid.Row="1" Width="auto" Height="auto" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" Background="Beige" BorderBrush="{x:Null}">
+            <Button x:Name="LoadProjectButton2" Grid.Row="1" Width="auto" Height="auto" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" Background="#067FC9" BorderBrush="{x:Null}">
                 <StackPanel>
                     <Image x:Name="LoadProjectButton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" Width="150" Height="150" Source="Pictures/open_graphic.png" MouseDown="LoadProjectButton_MouseDown"/>
                 </StackPanel>
@@ -34,10 +34,10 @@
             <TextBlock Grid.Row="1" Text="Öffnen" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
         </Grid>
         <!--<TextBlock Text="Dateien" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" /> -->
-        <ListView x:Name="viewUsedProjects" Background="Beige">
+        <ListView x:Name="viewUsedProjects" Background="#067FC9">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Projekte" DisplayMemberBinding="{Binding ProjectView}"/>
+                    <GridViewColumn Header="Projekte" DisplayMemberBinding="{Binding viewProjectFiles}"/>
                     <!-- <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding CreationDate}"/> -->
                 </GridView>
             </ListView.View>
