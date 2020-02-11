@@ -109,10 +109,14 @@
     <Compile Include="SPC.Editor\Views\ZeichenToolsView.xaml.cs">
       <DependentUpon>ZeichenToolsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SPC.Einstellungen\ViewModels\SettingsViewModel.cs" />
+    <Compile Include="SPC.Einstellungen\Views\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs">
       <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SPC.Einstellungen\Models\Settings.cs" />
+    <Compile Include="SPC.Einstellungen\Models\SettingsModel.cs" />
     <Compile Include="SPCEditor.xaml.cs">
       <DependentUpon>SPCEditor.xaml</DependentUpon>
     </Compile>
@@ -158,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SPC.Editor\Views\ZeichenToolsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Einstellungen\Views\SettingsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -209,8 +217,6 @@
     <Resource Include="SPC.StartMenu\Pictures\open_graphic.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="SPC.Einstellungen\ViewModels\" />
-    <Folder Include="SPC.Einstellungen\Views\" />
     <Folder Include="SPC.StartMenu\ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
