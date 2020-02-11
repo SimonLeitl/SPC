@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SPC.Editor
+namespace SPC.SPC.Editor.ViewModels
 {
-    class Export
+    class ZeichenToolsViewModel : EditorViewModelBase
     {
     }
 }

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SPC.SPC.Editor.ComponentModel.ComponentModel" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Models\KomponentenToolsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.Models.LegendeInfoModel" Collapsed="true">
+    <Position X="10.25" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Models\LegendeInfoModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.Models.LeitungenToolsModel" Collapsed="true">
+    <Position X="4.75" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>SPC.Editor\Models\LeitungenToolsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.Models.StatistikInfoModel" Collapsed="true">
+    <Position X="13" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Models\StatistikInfoModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.Models.ZeichenflächeModel" Collapsed="true">
+    <Position X="16" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Models\ZeichenflächeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.Models.ZeichenToolsModel" Collapsed="true">
+    <Position X="2" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Models\ZeichenToolsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.ViewModels.KomponentenToolsViewModel" Collapsed="true">
+    <Position X="7.25" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModels\KomponentenToolsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.ViewModels.LegendeInfoViewModel" Collapsed="true">
+    <Position X="10" Y="6" Width="2.25" />
+    <Members>
+      <Property Name="EditorViewModelBase" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModels\LegendeInfoViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EditorViewModelBase" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SPC.SPC.Editor.ViewModels.LeitungenToolsViewModel" Collapsed="true">
+    <Position X="4.5" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModels\LeitungenToolsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.ViewModels.StatistikInfoViewModel" Collapsed="true">
+    <Position X="12.75" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModels\StatistikInfoViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.ViewModels.ZeichenflächeViewModel" Collapsed="true">
+    <Position X="15.75" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModels\ZeichenflächeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.ViewModels.ZeichenToolsViewModel" Collapsed="true">
+    <Position X="1.75" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModels\ZeichenToolsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.ViewModels.EditorViewModelBase" Collapsed="true">
+    <Position X="9" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModels\EditorViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC.SPC.Editor.Views.ZeichenToolsView" Collapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\ZeichenToolsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC.SPC.Editor.Views.LeitungenToolsView" Collapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\LeitungenToolsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC.SPC.Editor.Views.KomponentenToolsView" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\KomponentenToolsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC.SPC.Editor.Views.LegendeInfoView" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\LegendeInfoView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC.SPC.Editor.Views.ZeichenflächeView" Collapsed="true">
+    <Position X="16" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\ZeichenflächeView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC.SPC.Editor.Views.StatistikInfoView" Collapsed="true">
+    <Position X="13" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\StatistikInfoView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC.MainWindow" Collapsed="true">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
