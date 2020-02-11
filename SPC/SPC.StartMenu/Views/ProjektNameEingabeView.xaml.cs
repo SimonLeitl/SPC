@@ -42,7 +42,7 @@ namespace SPC
 
         private void ZurückButton_Click(object sender, RoutedEventArgs e)
         {
-            SPC.SPCStartMenu ssm1 = new SPCStartMenu();
+            SPCStartMenu ssm1 = new SPCStartMenu();
             NavigationService.Navigate(ssm1);
         }
 

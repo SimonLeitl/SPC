@@ -22,13 +22,13 @@
             </Grid.RowDefinitions>
             <Button x:Name="newProjectbutton2" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}">
                 <StackPanel>
-                    <Image x:Name="newProjectbutton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" MaxHeight="150" MaxWidth="150" Source="Pictures/new_graphic.png" MouseDown="NewProjectbutton_MouseDown"/>
+                    <Image x:Name="newProjectbutton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" MaxHeight="100" MaxWidth="100" Source="../../SPC.StartMenu/Pictures/new_graphic.png" MouseDown="NewProjectbutton_MouseDown"/>
                 </StackPanel>
             </Button>
             <TextBlock Text="Erstellen" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" ></TextBlock>
             <Button x:Name="LoadProjectButton2" Grid.Row="1" Width="auto" Height="auto" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" Background="#067FC9" BorderBrush="{x:Null}">
                 <StackPanel>
-                    <Image x:Name="LoadProjectButton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" Width="150" Height="150" Source="Pictures/open_graphic.png" MouseDown="LoadProjectButton_MouseDown"/>
+                    <Image x:Name="LoadProjectButton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" Width="100" Height="100" Source="../../SPC.StartMenu/Pictures/open_graphic.png" MouseDown="LoadProjectButton_MouseDown"/>
                 </StackPanel>
             </Button>
             <TextBlock Grid.Row="1" Text="Öffnen" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
