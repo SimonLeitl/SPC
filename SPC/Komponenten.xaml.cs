@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace SPC
 {
     /// <summary>
-    /// Interaktionslogik für SPCEditor.xaml
+    /// Interaktionslogik für Komponenten.xaml
     /// </summary>
-    public partial class SPCEditor : Window
+    public partial class Komponenten : UserControl
     {
-
-        public SPCEditor()
+        public Komponenten()
         {
             InitializeComponent();
         }
-
-
-
     }
-    
 }

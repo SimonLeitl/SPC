@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SPC.Start_Menu;
 using Microsoft.Win32;
+using System.IO;
+using System.Collections;
 
 namespace SPC
 {
@@ -22,9 +24,29 @@ namespace SPC
     /// </summary>
     public partial class SPCStartMenu : Page
     {
+        private string[] viewProjectFiles;
+        public ArrayList arrayList;
+        private String path = "savings/";
+        public SPCStartMenu sPCStartMenu;
+        public String ProjectView { get; set; }
+
         public SPCStartMenu()
         {
             InitializeComponent();
+
+           arrayList = new ArrayList();
+           viewProjectFiles = Directory.GetFiles(path);
+           // test = new TextBlock();
+           for (int i = 1; i <= viewProjectFiles.Length; i++)
+           {
+               viewProjectFiles[i - 1].ToString();
+               arrayList.Add(viewProjectFiles[i - 1]);
+              // test.Text = viewProjectFiles[i - 1];
+
+               // viewUsedProjects.Items.Add(viewProjectFiles[i-1]);
+           };
+        
+          viewUsedProjects.ItemsSource = arrayList;
         }
 
         private void NewProjectbutton_MouseDown(object sender, MouseButtonEventArgs e)
