@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SPC
+namespace SPC.SPC.Einstellungen.ViewModels
 {
-    class Settings
+    class EinstellungenViewModel
     {
     }
 }
