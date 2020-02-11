@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SPC"
       mc:Ignorable="d" 
-      d:DesignHeight="400" d:DesignWidth="550"
-      Title="SPC - StartMenu">
+      d:DesignHeight="300" d:DesignWidth="450"
+      Title="SPC - StartMenu" ShowsNavigationUI="False">
     <Grid Background="#31508E">
         <!--ShowGridLines="True"-->
         <Grid.ColumnDefinitions>

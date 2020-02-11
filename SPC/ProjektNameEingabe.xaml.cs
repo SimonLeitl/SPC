@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -32,8 +33,11 @@ namespace SPC
             new New_Project(projektname);
 
             SPCEditor e1 = new SPCEditor();
-            NavigationService.Navigate(e1);
+           // e1.ShowDialog();
+            e1.Show();
             
+            // NavigationService.Navigate(e1);
+
         }
 
         private void ZurückButton_Click(object sender, RoutedEventArgs e)
@@ -41,5 +45,6 @@ namespace SPC
             SPC.SPCStartMenu ssm1 = new SPCStartMenu();
             NavigationService.Navigate(ssm1);
         }
+
     }
 }

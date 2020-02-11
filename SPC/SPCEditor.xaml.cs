@@ -18,7 +18,7 @@ namespace SPC
     /// <summary>
     /// Interaktionslogik für SPCEditor.xaml
     /// </summary>
-    public partial class SPCEditor : Page
+    public partial class SPCEditor : Window
     {
 
         public SPCEditor()
