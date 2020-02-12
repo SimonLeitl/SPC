@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SPC.SPC.Einstellungen.ViewModels
+﻿namespace SPC.SPC.Einstellungen.ViewModels
 {
-    class EinstellungenViewModel
+    internal class EinstellungenViewModel
     {
     }
 }

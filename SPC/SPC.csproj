@@ -100,7 +100,6 @@
     <Compile Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs">
       <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SPC.Einstellungen\Models\EinstellungenModel.cs" />
     <Compile Include="SPC.Editor\Models\KomponentenToolsModel.cs" />
     <Compile Include="SPC.Editor\Models\LegendeInfoModel.cs" />
     <Compile Include="SPC.Editor\Models\LeitungenToolsModel.cs" />
@@ -120,9 +119,6 @@
     <Compile Include="SPC.Einstellungen\ViewModels\EinstellungenViewModel.cs" />
     <Compile Include="SPC.StartMenu\Views\StartMenuView.xaml.cs">
       <DependentUpon>StartMenuView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SPC.StartMenu\Models\Load_Project.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="SPC.StartMenu\Models\New_Project.cs" />
     <Compile Include="SPC.StartMenu\Models\Used_Project.cs" />
@@ -210,6 +206,7 @@
     <Resource Include="SPC.StartMenu\Pictures\open_graphic.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="SPC.Einstellungen\Models\" />
     <Folder Include="SPC.Einstellungen\Views\" />
     <Folder Include="SPC.StartMenu\ViewModels\" />
   </ItemGroup>

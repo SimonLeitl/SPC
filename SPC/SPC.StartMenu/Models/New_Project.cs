@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+﻿using System.IO;
 
-namespace SPC.Start_Menu
+namespace SPC.SPC.StartMenu.Models
 {
-    class New_Project
+    internal class New_Project
     {
-        private String name;
-        public New_Project(String name)
+        private readonly string name;
+
+        public New_Project(string name)
         {
             this.name = name;
             createNewProject();
@@ -19,7 +15,7 @@ namespace SPC.Start_Menu
         //Methode mit der das neue Projekt angelegt wird. Überprüft zunächst ob der Ordner zum Speichern vorhanden ist. Ansonsten wird ein neuer erstellt. 
         public void createNewProject()
         {
-            if (checkDirectory() == true)
+            if (checkDirectory())
             {
                 createFile();
             }
@@ -31,32 +27,25 @@ namespace SPC.Start_Menu
         }
 
         //Methode die Überprüft ob der Ordner, in welchem die Dateien gespeichert werden, vorhanden ist
-        public Boolean checkDirectory()
+        public bool checkDirectory()
         {
             if (Directory.Exists("Saving"))
-            {
                 return true;
-            }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         //Erstellt den neuen Ordner zum Speichern der Datei
         public void createDirectory()
         {
             Directory.CreateDirectory("Savings");
-           
         }
-        
+
         //Erstellt eine Datei im Format txt mit dem übergebenem Projektnamen. 
         public void createFile()
         {
-            String path = "savings/" + name + ".txt";
-            using (FileStream fs = File.Create(path))
+            var path = "savings/" + name + ".txt";
+            using (var fs = File.Create(path))
             {
-              
             }
         }
     }
