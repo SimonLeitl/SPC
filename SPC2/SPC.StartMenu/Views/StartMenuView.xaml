@@ -37,15 +37,22 @@
                 </StackPanel>
             </Button>
         </Grid>
-        <!--<TextBlock Text="Dateien" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" /> -->
-        <ListView x:Name="viewUsedProjects" Background="#067FC9" Margin="10">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn  Header="Projekte"/>
+        <ListView Grid.Column="0" x:Name="viewUsedProjects" Background="#067FC9" Margin="10">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding ProjektPfad}"></TextBlock>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListViewItem Background="#31508E" FontWeight="Bold" FontSize="18">Projekte</ListViewItem>
+            <!-- <ListView.View>-->
+                <!--<GridView>-->
+                   <!-- <GridViewColumn  Header="Projekte"/> -->
                     <!-- DisplayMemberBinding="{Binding viewProjectFiles}" -->
                     <!-- <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding CreationDate}"/> -->
-                </GridView>
-            </ListView.View>
+               <!-- </GridView>-->
+           <!-- </ListView.View>-->
         </ListView>
     </Grid>
 </Page>
