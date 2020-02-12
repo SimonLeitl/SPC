@@ -79,6 +79,9 @@
     <Compile Include="SPC.StartMenu\Models\StartMenuModel.cs" />
     <Compile Include="SPC.StartMenu\ViewModels\ProjektNameEingabeViewModel.cs" />
     <Compile Include="SPC.StartMenu\ViewModels\StartMenuViewModel.cs" />
+    <Compile Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs">
+      <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SPC.Einstellungen\Views\EinstellungenView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -126,8 +133,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SPC.StartMenu\Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
