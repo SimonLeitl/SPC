@@ -71,6 +71,12 @@
     <Compile Include="SPC.Editor\Views\KomponentenToolsView.xaml.cs">
       <DependentUpon>KomponentenToolsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SPC.Einstellungen\Models\EinstellungenModel.cs" />
+    <Compile Include="SPC.Einstellungen\ViewModels\EinstellungenViewModel.cs" />
+    <Compile Include="SPC.Einstellungen\Views\EinstellungenView.xaml.cs">
+      <DependentUpon>EinstellungenView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.StartMenu\Models\StartMenuModel.cs" />
     <Compile Include="SPC.StartMenu\ViewModels\ProjektNameEingabeViewModel.cs" />
     <Compile Include="SPC.StartMenu\ViewModels\StartMenuViewModel.cs" />
     <Page Include="MainWindow.xaml">
@@ -86,6 +92,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SPC.Editor\Views\KomponentenToolsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Einstellungen\Views\EinstellungenView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -117,10 +127,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="SPC.Einstellungen\Models\" />
-    <Folder Include="SPC.Einstellungen\ViewModels\" />
-    <Folder Include="SPC.Einstellungen\Views\" />
-    <Folder Include="SPC.StartMenu\Models\" />
     <Folder Include="SPC.StartMenu\Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
