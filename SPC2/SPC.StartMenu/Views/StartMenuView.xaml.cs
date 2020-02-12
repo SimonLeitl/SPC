@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SPC2
+namespace SPC2.SPC.StartMenu.Views
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für StartMenuView.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class StartMenuView : Page
     {
-        public MainWindow()
+        public StartMenuView()
         {
             InitializeComponent();
         }

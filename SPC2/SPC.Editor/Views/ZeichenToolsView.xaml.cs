@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SPC2
+namespace SPC2.SPC.Editor.Views
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für ZeichenToolsView.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class ZeichenToolsView : UserControl
     {
-        public MainWindow()
+        public ZeichenToolsView()
         {
             InitializeComponent();
         }

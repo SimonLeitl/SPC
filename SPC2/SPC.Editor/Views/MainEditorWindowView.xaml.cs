@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SPC2
+namespace SPC2.SPC.Editor.Views
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für MainEditorWindowView.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class MainEditorWindowView : Window
     {
-        public MainWindow()
+        public MainEditorWindowView()
         {
             InitializeComponent();
         }

@@ -71,6 +71,21 @@
     <Compile Include="SPC.Editor\Views\KomponentenToolsView.xaml.cs">
       <DependentUpon>KomponentenToolsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SPC.Editor\Views\LegendeInfoView.xaml.cs">
+      <DependentUpon>LegendeInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.Editor\Views\LeitungenToolsView.xaml.cs">
+      <DependentUpon>LeitungenToolsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.Editor\Views\MainEditorWindowView.xaml.cs">
+      <DependentUpon>MainEditorWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.Editor\Views\StatistikInfoView.xaml.cs">
+      <DependentUpon>StatistikInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.Editor\Views\ZeichenToolsView.xaml.cs">
+      <DependentUpon>ZeichenToolsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SPC.Einstellungen\Models\EinstellungenModel.cs" />
     <Compile Include="SPC.Einstellungen\ViewModels\EinstellungenViewModel.cs" />
     <Compile Include="SPC.Einstellungen\Views\EinstellungenView.xaml.cs">
@@ -81,6 +96,9 @@
     <Compile Include="SPC.StartMenu\ViewModels\StartMenuViewModel.cs" />
     <Compile Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs">
       <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.StartMenu\Views\StartMenuView.xaml.cs">
+      <DependentUpon>StartMenuView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -98,11 +116,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SPC.Editor\Views\LegendeInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\LeitungenToolsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\MainEditorWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\StatistikInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\ZeichenToolsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SPC.Einstellungen\Views\EinstellungenView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.StartMenu\Views\StartMenuView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -134,5 +176,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Resource Include="SPC.StartMenu\Bilder\open_graphic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SPC.StartMenu\Bilder\new_graphic.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
