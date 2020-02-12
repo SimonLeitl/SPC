@@ -8,5 +8,11 @@ namespace SPC2.SPC.StartMenu.Models
 {
     class StartMenuModel
     {
+        public StartMenuModel()
+        {
+
+        }
+
+      
     }
 }

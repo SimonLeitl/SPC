@@ -27,7 +27,7 @@
             <Button x:Name="zurückButton" Grid.Row="2" Content="Zurück" Width="94" Height="33" VerticalAlignment="Top"
                     HorizontalAlignment="Center" />
             <Button x:Name="weiterButton" Grid.Row="2" Grid.Column="1" Content="Weiter" Width="94" Height="33"
-                    VerticalAlignment="Top" HorizontalAlignment="Center" />
+                    VerticalAlignment="Top" HorizontalAlignment="Center" DataContext="{Binding createNewProject}"/>
         </Grid>
     </Grid>
 </Page>
