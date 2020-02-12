@@ -9,7 +9,7 @@ namespace SPC
     {
         public MainWindow()
         {
-            InitializeComponent();
+          //  InitializeComponent();
         }
     }
 }
