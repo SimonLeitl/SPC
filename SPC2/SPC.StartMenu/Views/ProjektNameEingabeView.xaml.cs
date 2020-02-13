@@ -19,7 +19,7 @@ namespace SPC2.SPC.StartMenu.Views
     /// <summary>
     /// Interaktionslogik für ProjektNameEingabeView.xaml
     /// </summary>
-    public partial class ProjektNameEingabeView : Page
+    public partial class ProjektNameEingabeView : UserControl
     {
         StartMenuViewModel startMenuViewModel=new StartMenuViewModel();
         public ProjektNameEingabeView()

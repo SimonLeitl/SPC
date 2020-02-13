@@ -18,11 +18,21 @@ namespace SPC2.SPC.StartMenu.Views
     /// <summary>
     /// Interaktionslogik für StartMenuView.xaml
     /// </summary>
-    public partial class StartMenuView : Page
+    public partial class StartMenuView : Window
     {
         public StartMenuView()
         {
             InitializeComponent();
         }
+
+       // private void ProjektErstellen(object sender, RoutedEventArgs e)
+       // {
+
+       // }
+
+      //  private void ProjektOffnen(object sender, RoutedEventArgs e)
+       // {
+
+       // }
     }
 }

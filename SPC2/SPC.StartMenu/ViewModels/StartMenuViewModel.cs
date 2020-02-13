@@ -26,5 +26,10 @@ namespace SPC2.SPC.StartMenu.ViewModels
 
         }
 
+        public void openExistProject()
+        {
+
+        }
+
     }
 }
