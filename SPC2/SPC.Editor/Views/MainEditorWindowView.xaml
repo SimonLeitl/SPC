@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SPC2.SPC.Editor.Views"
         mc:Ignorable="d"
-        Title="MainEditorWindowView" Height="450" Width="800">
+        Title="MainEditorWindowView" Height="1080" Width="1080">
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -57,8 +57,9 @@
                     </DockPanel>
                     <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
                     <DockPanel Grid.Row="1" x:Name="draw">
+                       <!-- <ContentControl DataContext="{Binding}"></ContentControl>-->
                         <TextBlock Text="Toolbox" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center"
-						           VerticalAlignment="Center" />
+                                   VerticalAlignment="Center" />
                     </DockPanel>
                 </Grid>
                 <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
