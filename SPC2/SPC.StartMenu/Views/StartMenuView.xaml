@@ -21,7 +21,7 @@
                 <RowDefinition />
             </Grid.RowDefinitions>
             <Button x:Name="newProjectbutton2" Width="auto" Height="auto" HorizontalAlignment="Stretch"
-			        VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}">
+			        VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}" DataContext="{Binding openProjektNameEingabeView}">
                 <StackPanel>
                     <Image x:Name="newProjectbutton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform"
 					       MaxHeight="100" MaxWidth="100" Source="../../SPC.StartMenu/Bilder/new_graphic.png" />

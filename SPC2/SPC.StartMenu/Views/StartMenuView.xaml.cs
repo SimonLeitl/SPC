@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SPC2.SPC.StartMenu.ViewModels;
 
 namespace SPC2.SPC.StartMenu.Views
 {
@@ -20,9 +21,12 @@ namespace SPC2.SPC.StartMenu.Views
     /// </summary>
     public partial class StartMenuView : Page
     {
+        StartMenuViewModel startMenuViewModel = new StartMenuViewModel();
         public StartMenuView()
         {
             InitializeComponent();
+            DataContext = startMenuViewModel;
+
         }
     }
 }

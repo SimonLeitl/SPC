@@ -5,11 +5,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Data;
 
 namespace SPC2.SPC.StartMenu.ViewModels
 {
     class StartMenuViewModel : INotifyPropertyChanged
     {
+        Binding binding = new Binding("openProjektNameEingabeView");
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void NotifyPropertyChanged(string propertyName)
@@ -23,6 +26,11 @@ namespace SPC2.SPC.StartMenu.ViewModels
         public StartMenuViewModel()
         {
            
+
+        }
+
+        public void openProjektNameEingabeView()
+        {
 
         }
 
