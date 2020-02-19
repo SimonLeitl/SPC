@@ -7,40 +7,43 @@
         mc:Ignorable="d"
         Title="MainEditorWindowView" Height="1080" Width="1080">
     <Grid>
-        <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10.5*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="CompGrid" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*" />
+                <RowDefinition Height="4.5*" />
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10.5*" />
-                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
-            <Grid x:Name="CompGrid" Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="0.5*" />
-                    <RowDefinition Height="4.5*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-                </Grid.ColumnDefinitions>
-                <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-                <TextBlock TextWrapping="Wrap" Text="Checkbox" FontSize="14" HorizontalAlignment="Center" />
-                <TextBlock Grid.Column="1" TextWrapping="Wrap" Text="Components" FontSize="18" HorizontalAlignment="Center" />
-                <DockPanel x:Name="comp" Grid.Row="1">
-                    <Button x:Name="test" DockPanel.Dock="Top" Height="30">Select Style</Button>
-                    <Button x:Name="test2" DockPanel.Dock="Top" Height="30">Legende</Button>
-                </DockPanel>
-            </Grid>
+            <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            <TextBlock Grid.Column="0" Grid.Row="0" TextWrapping="Wrap" Text="Checkbox" FontSize="14" HorizontalAlignment="Center" />
+            <TextBlock Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="Components" FontSize="18" HorizontalAlignment="Center" />
+            <DockPanel x:Name="comp" Grid.Row="1" Grid.Column="0">
+                <Grid>
+                    <GridSplitter Grid.Row="0"/>
+                    <Button Grid.Row="0" Grid.Column="0" x:Name="test" DockPanel.Dock="Top" Height="30">Select Style</Button>
+                    <Button Grid.Row="0" Grid.Column="0" x:Name="test2" DockPanel.Dock="Top" Height="30">Legende</Button>
+                </Grid>
+            </DockPanel>
+        </Grid>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="10.5*" />
+            </Grid.RowDefinitions>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="3*" />
-                    <RowDefinition Height="10.5*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1.5*" />
                 </Grid.RowDefinitions>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="1*" />
-                        <RowDefinition Height="1.5*" />
-                    </Grid.RowDefinitions>
-                    <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-                    <DockPanel x:Name="EditorToolbox">
+                <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                <DockPanel x:Name="EditorToolbox">
+                    <Grid>
                         <ToolBarTray DockPanel.Dock="Top">
                             <ToolBar>
                                 <Button x:Name="new" Command="New" Content="New" />
@@ -53,18 +56,19 @@
                                 <Button x:Name="paste" Command="Paste" Content="Paste" />
                             </ToolBar>
                         </ToolBarTray>
-                        <TextBox AcceptsReturn="True" />
-                    </DockPanel>
-                    <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-                    <DockPanel Grid.Row="1" x:Name="draw">
-                       <!-- <ContentControl DataContext="{Binding}"></ContentControl>-->
-                        <TextBlock Text="Toolbox" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center"
-                                   VerticalAlignment="Center" />
-                    </DockPanel>
-                </Grid>
+                    </Grid>
+                </DockPanel>
                 <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-                <Canvas Grid.Row="1" x:Name="EditorCnv" />
+                <DockPanel Grid.Row="1" x:Name="draw">
+                    <Grid>
+                        <!-- <ContentControl DataContext="{Binding}"></ContentControl>-->
+                        <TextBlock Text="Toolbox" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center"
+                                       VerticalAlignment="Center" />
+                    </Grid>
+                </DockPanel>
             </Grid>
+            <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            <Canvas Grid.Row="1" x:Name="EditorCnv" />
         </Grid>
     </Grid>
 </Window>

@@ -73,6 +73,24 @@
     <Compile Include="ProjektNameEingabeView.xaml.cs">
       <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SPC.Editor\Views\KomponentenToolsView.xaml.cs">
+      <DependentUpon>KomponentenToolsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.Editor\Views\LegendeInfoView.xaml.cs">
+      <DependentUpon>LegendeInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.Editor\Views\LeitungenToolsView.xaml.cs">
+      <DependentUpon>LeitungenToolsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.Editor\Views\MainEditorWindowView.xaml.cs">
+      <DependentUpon>MainEditorWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.Editor\Views\StatistikInfoView.xaml.cs">
+      <DependentUpon>StatistikInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SPC.Editor\Views\ZeichenToolsView.xaml.cs">
+      <DependentUpon>ZeichenToolsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SPC.StartMenu\Design\DesignDataService.cs" />
     <Compile Include="SPC.StartMenu\Model\DataItem.cs" />
     <Compile Include="SPC.StartMenu\Model\DataService.cs" />
@@ -98,6 +116,30 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ProjektNameEingabeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\KomponentenToolsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\LegendeInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\LeitungenToolsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\MainEditorWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\StatistikInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SPC.Editor\Views\ZeichenToolsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,6 +181,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="SPC.Editor\Model\" />
+    <Folder Include="SPC.Editor\ViewModel\" />
     <Folder Include="SPC.StartMenu\ViewModel\" />
     <Folder Include="SPC.StartMenu\Views\" />
   </ItemGroup>
