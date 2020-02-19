@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:SPC3"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-             DataContext="{Binding startMenuViewModel, Source={StaticResource Locator}}">
+             DataContext="{Binding Main, Source={StaticResource Locator}}">
 
 	<Grid Background="#31508E">
 		<!--ShowGridLines="True"-->
@@ -20,11 +20,11 @@
 				<RowDefinition />
 				<RowDefinition />
 			</Grid.RowDefinitions>
-			<Button x:Name="newProjectbutton2" Width="auto" Height="auto" HorizontalAlignment="Stretch"
-			        VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}" DataContext="{Binding DataContext, RelativeSource={RelativeSource AncestorType={x:Type Window}} }"  CommandParameter="{Binding }">
+			<Button x:Name="newProjectButton" Width="auto" Height="auto" HorizontalAlignment="Stretch"
+			        VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}" Command="{Binding ÖffneProjektNameEingabeCommand}"  CommandParameter="{Binding }">
 				<StackPanel>
 					<Image x:Name="newProjectbutton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform"
-					       MaxHeight="100" MaxWidth="100" Source="../Pictures/new_graphic.png" />
+					       MaxHeight="100" MaxWidth="100" Source="/Pictures/new_graphic.png" />
 					<TextBlock Text="Erstellen" FontSize="18" TextAlignment="Center" HorizontalAlignment="Center"/>
 				</StackPanel>
 			</Button>
@@ -32,7 +32,7 @@
                     Margin="10" VerticalAlignment="Stretch" Background="#067FC9" BorderBrush="{x:Null}" DataContext="{Binding OpenExistProject}">
 				<StackPanel>
 					<Image x:Name="LoadProjectButton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform"
-					       Width="100" Height="100" Source="../Pictures/open_graphic.png" />
+					       Width="100" Height="100" Source="/Pictures/open_graphic.png" />
 					<TextBlock Text="Öffnen" FontSize="18" TextAlignment="Center" HorizontalAlignment="Center"/>
 				</StackPanel>
 			</Button>

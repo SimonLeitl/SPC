@@ -10,7 +10,7 @@
         mc:Ignorable="d ignore"
         Height="300"
         Width="518.884"
-        Title="MVVM Light Application"
+        Title="SPC"
         DataContext="{Binding Main, Source={StaticResource Locator}}">
 	<Window.Resources>
 		
@@ -28,6 +28,7 @@
 	<DockPanel>
 	    <Grid>
 		    <ContentControl x:Name="Content" Content="{Binding CurrentPageViewModel}"></ContentControl>
+			
 	    </Grid>
 	</DockPanel>
 </Window>
