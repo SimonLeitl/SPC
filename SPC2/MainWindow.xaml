@@ -1,11 +1,14 @@
-﻿<NavigationWindow x:Class="SPC2.MainWindow"
+﻿<Window x:Class="SPC2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SPC2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="500" Source="SPC.StartMenu/Views/StartMenuView.xaml"
-        ShowsNavigationUI="False">
-	
-</NavigationWindow>
+        Height="300"
+        Width="623.077"
+        Title="MVVM Light Application"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+        >
+
+</Window>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SPC.Properties
+namespace SPC3.Properties
 {
 
 

@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using GalaSoft.MvvmLight.Threading;
 
-namespace SPC
+namespace SPC3
 {
     /// <summary>
     /// Interaction logic for App.xaml

@@ -1,11 +1,13 @@
-﻿<UserControl x:Class="SPC.SPC.StartMenu.Views.StartMenuView"
+﻿<UserControl x:Class="SPC3.StartMenuView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SPC.SPC.StartMenu.Views"
+             xmlns:local="clr-namespace:SPC3"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{Binding startMenuViewModel, Source={StaticResource Locator}}">
+
 	<Grid Background="#31508E">
 		<!--ShowGridLines="True"-->
 		<Grid.ColumnDefinitions>
@@ -19,7 +21,7 @@
 				<RowDefinition />
 			</Grid.RowDefinitions>
 			<Button x:Name="newProjectbutton2" Width="auto" Height="auto" HorizontalAlignment="Stretch"
-			        VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}" DataContext="{Binding openProjektNameEingabeView}">
+			        VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}" DataContext="{Binding DataContext, RelativeSource={RelativeSource AncestorType={x:Type Window}} }"  CommandParameter="{Binding }">
 				<StackPanel>
 					<Image x:Name="newProjectbutton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform"
 					       MaxHeight="100" MaxWidth="100" Source="../Pictures/new_graphic.png" />

@@ -1,8 +1,7 @@
 ﻿using System.Windows;
-using System.Windows.Navigation;
-using SPC.ViewModel;
+using SPC3.ViewModel;
 
-namespace SPC
+namespace SPC3
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

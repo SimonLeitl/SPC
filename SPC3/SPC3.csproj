@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{98C6B1B8-C9E0-47AF-AFDD-66B0A761BEEF}</ProjectGuid>
+    <ProjectGuid>{29A26D59-B049-4DC5-AABA-336CE0F22D04}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SPC</RootNamespace>
-    <AssemblyName>SPC</AssemblyName>
+    <RootNamespace>SPC3</RootNamespace>
+    <AssemblyName>SPC3</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -70,16 +70,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ProjektNameEingabeView.xaml.cs">
+      <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SPC.StartMenu\Design\DesignDataService.cs" />
-    <Compile Include="SPC.StartMenu\Models\DataItem.cs" />
-    <Compile Include="SPC.StartMenu\Models\DataService.cs" />
-    <Compile Include="SPC.StartMenu\Models\IDataService.cs" />
-    <Compile Include="SPC.StartMenu\ViewModels\MainViewModel.cs" />
-    <Compile Include="SPC.StartMenu\ViewModels\ProjektNameEingabeViewModel.cs" />
-    <Compile Include="SPC.StartMenu\ViewModels\StartMenuViewModel.cs" />
-    <Compile Include="SPC.StartMenu\ViewModels\StartMenuViewModelBase.cs" />
-    <Compile Include="SPC.StartMenu\ViewModels\ViewModelLocator.cs" />
-    <Compile Include="SPC.StartMenu\Views\StartMenuView.xaml.cs">
+    <Compile Include="SPC.StartMenu\Model\DataItem.cs" />
+    <Compile Include="SPC.StartMenu\Model\DataService.cs" />
+    <Compile Include="SPC.StartMenu\Model\IDataService.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ProjektNameEingabeViewModel.cs" />
+    <Compile Include="ViewModel\StartMenuViewModel.cs" />
+    <Compile Include="ViewModel\StartMenuViewModelBase.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="StartMenuView.xaml.cs">
       <DependentUpon>StartMenuView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -94,11 +97,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ProjektNameEingabeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SPC.StartMenu\Skins\MainSkin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="SPC.StartMenu\Views\StartMenuView.xaml">
+    <Page Include="StartMenuView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -132,11 +139,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="SPC.Editor\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="SPC.StartMenu\Pictures\new_graphic.png" />
-    <Resource Include="SPC.StartMenu\Pictures\open_graphic.png" />
+    <Folder Include="SPC.StartMenu\ViewModel\" />
+    <Folder Include="SPC.StartMenu\Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

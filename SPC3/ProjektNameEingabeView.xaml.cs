@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SPC2
+namespace SPC3
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für ProjektNameEingabeView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ProjektNameEingabeView : UserControl
     {
-        public MainWindow()
+        public ProjektNameEingabeView()
         {
             InitializeComponent();
         }
