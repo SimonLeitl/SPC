@@ -13,9 +13,12 @@ namespace SPC3.ViewModel
         public StartMenuViewModel()
         {
             Name = "StartMenuViewModel";
-           // ChangePageCommand = new RelayCommand(main.changeToProjektNameEingabeView);
         }
-       
+
+        public void openProject()
+        {
+            
+        }
         
     }
 }
