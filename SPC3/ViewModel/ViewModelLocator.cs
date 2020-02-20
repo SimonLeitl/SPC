@@ -13,7 +13,7 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 using SPC3.Model;
-using SPC3.ViewModel;
+using SPC3.SPC.StartMenu.ViewModel;
 
 namespace SPC3.ViewModel
 {

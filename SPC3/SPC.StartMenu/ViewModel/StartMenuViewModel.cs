@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight.CommandWpf;
 
-namespace SPC3.ViewModel
+namespace SPC3.SPC.StartMenu.ViewModel
 {
    public class StartMenuViewModel : StartMenuViewModelBase
    {

@@ -70,7 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ProjektNameEingabeView.xaml.cs">
+    <Compile Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs">
       <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="SPC.Editor\Views\KomponentenToolsView.xaml.cs">
@@ -95,12 +95,12 @@
     <Compile Include="SPC.StartMenu\Model\DataItem.cs" />
     <Compile Include="SPC.StartMenu\Model\DataService.cs" />
     <Compile Include="SPC.StartMenu\Model\IDataService.cs" />
-    <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\ProjektNameEingabeViewModel.cs" />
-    <Compile Include="ViewModel\StartMenuViewModel.cs" />
-    <Compile Include="ViewModel\StartMenuViewModelBase.cs" />
+    <Compile Include="SPC.StartMenu\ViewModel\MainViewModel.cs" />
+    <Compile Include="SPC.StartMenu\ViewModel\ProjektNameEingabeViewModel.cs" />
+    <Compile Include="SPC.StartMenu\ViewModel\StartMenuViewModel.cs" />
+    <Compile Include="SPC.StartMenu\ViewModel\StartMenuViewModelBase.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="StartMenuView.xaml.cs">
+    <Compile Include="SPC.StartMenu\Views\StartMenuView.xaml.cs">
       <DependentUpon>StartMenuView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -115,7 +115,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ProjektNameEingabeView.xaml">
+    <Page Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -147,7 +147,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="StartMenuView.xaml">
+    <Page Include="SPC.StartMenu\Views\StartMenuView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,12 +183,10 @@
   <ItemGroup>
     <Folder Include="SPC.Editor\Model\" />
     <Folder Include="SPC.Editor\ViewModel\" />
-    <Folder Include="SPC.StartMenu\ViewModel\" />
-    <Folder Include="SPC.StartMenu\Views\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pictures\new_graphic.png" />
-    <Resource Include="Pictures\open_graphic.png" />
+    <Resource Include="SPC.StartMenu\Pictures\new_graphic.png" />
+    <Resource Include="SPC.StartMenu\Pictures\open_graphic.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
