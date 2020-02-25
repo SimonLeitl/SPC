@@ -8,19 +8,22 @@
         xmlns:viewModel="clr-namespace:SPC3.SPC.StartMenu.ViewModel"
         xmlns:views="clr-namespace:SPC3.SPC.StartMenu.Views"
         mc:Ignorable="d ignore"
-        Height="300"
-        Width="518.884"
+        Height="400"
+        Width="500"
         Title="SPC"
         DataContext="{Binding Main, Source={StaticResource Locator}}">
 	<Window.Resources>
-		
-		<DataTemplate DataType="{x:Type viewModel:MainViewModel}">
-			<views:StartMenuView></views:StartMenuView>
+
+        <DataTemplate DataType="{x:Type viewModel:MainViewModel}">
+            <!--  -->
+            <views:StartMenuView></views:StartMenuView>
 		</DataTemplate>
-		<DataTemplate DataType="{x:Type viewModel:StartMenuViewModel}">
-			<views:StartMenuView></views:StartMenuView>
+        <DataTemplate DataType="{x:Type viewModel:StartMenuViewModel}">
+            <!--  -->
+            <views:StartMenuView></views:StartMenuView>
 		</DataTemplate>
-		<DataTemplate DataType="{x:Type viewModel:ProjektNameEingabeViewModel}">
+        <DataTemplate DataType="{x:Type viewModel:ProjektNameEingabeViewModel}">
+            <!--  -->
 			<views:ProjektNameEingabeView></views:ProjektNameEingabeView>
 		</DataTemplate>
 	</Window.Resources>

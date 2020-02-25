@@ -70,6 +70,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SPC.Editor\Model\LeitungDreiMalEinsFuenfModel.cs" />
+    <Compile Include="SPC.Editor\Model\LeitungDreiMalZweiFuenfModel.cs" />
+    <Compile Include="SPC.Editor\Model\LeitungenToolsModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\LeitungenToolsViewModel.cs" />
     <Compile Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs">
       <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
     </Compile>
@@ -180,10 +184,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SPC.Editor\Model\" />
-    <Folder Include="SPC.Editor\ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="SPC.StartMenu\Pictures\new_graphic.png" />
     <Resource Include="SPC.StartMenu\Pictures\open_graphic.png" />
