@@ -9,9 +9,10 @@
   DataContext="{Binding Source={StaticResource Locator}, Path=ViewModelName}"
 */
 
+using CommonServiceLocator;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
-using Microsoft.Practices.ServiceLocation;
+//using Microsoft.Practices.ServiceLocation;
 using SPC3.Model;
 using SPC3.ViewModel;
 
@@ -58,7 +59,7 @@ namespace SPC3.ViewModel
             }
         }
 
-        public ProjektNameEingabeViewModel projektNameEingabeViewModel
+        public ProjektNameEingabeViewModel ProjektNameEingabeViewModel
 
         {
             get
@@ -66,7 +67,7 @@ namespace SPC3.ViewModel
                 return ServiceLocator.Current.GetInstance<ProjektNameEingabeViewModel>();
             }
         }
-        public StartMenuViewModel startMenuViewModel
+        public StartMenuViewModel StartMenuViewModel
 
         {
             get
