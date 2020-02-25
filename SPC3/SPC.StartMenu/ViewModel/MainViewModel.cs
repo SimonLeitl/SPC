@@ -4,7 +4,7 @@ using GalaSoft.MvvmLight.CommandWpf;
 using SPC3.Model;
 using SPC3.ViewModel;
 
-namespace SPC3.ViewModel
+namespace SPC3.SPC.StartMenu.ViewModel
 {
     /// <summary>
     /// This class contains properties that the main View can data bind to.

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SPC3
+namespace SPC3.SPC.StartMenu.Views
 {
     /// <summary>
-    /// Interaktionslogik für StartMenuView.xaml
+    /// Interaktionslogik für ProjektNameEingabeView.xaml
     /// </summary>
-    public partial class StartMenuView : UserControl
+    public partial class ProjektNameEingabeView : UserControl
     {
-        public StartMenuView()
+        public ProjektNameEingabeView()
         {
             InitializeComponent();
         }
