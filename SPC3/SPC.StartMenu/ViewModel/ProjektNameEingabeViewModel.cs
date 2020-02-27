@@ -14,53 +14,54 @@ namespace SPC3.SPC.StartMenu.ViewModel
         public ProjektNameEingabeViewModel()
         {
             Name = "ProjektNameEingabeView";
-            this.newProjektCommand = new RelayCommand(this.createNewProject);
+            this.NewProjektCommand = new RelayCommand(this.CreateNewProject);
         }
 
-        public RelayCommand newProjektCommand { get; private set; }
+        public RelayCommand NewProjektCommand { get; private set; }
         public string ProjektName
         {
             get { return projektName; }
             set { projektName = value; }
         }
         //Methode mit der das neue Projekt angelegt wird. Überprüft zunächst ob der Ordner zum Speichern vorhanden ist. Ansonsten wird ein neuer erstellt. 
-        public void createNewProject()
+        public void CreateNewProject()
         {
-            if (checkProjectDirectory() == true)
+            if (CheckProjectDirectory() == true)
             {
-                createProjectFile();
+                CreateProjectFile();
             }
             else
             {
-                createProjectDirectory();
-                createProjectFile();
+                CreateProjectDirectory();
+                CreateProjectFile();
             }
         }
 
         //Methode die Überprüft ob der Ordner, in welchem die Dateien gespeichert werden, vorhanden ist
-        public Boolean checkProjectDirectory()
+        public Boolean CheckProjectDirectory()
         {
-            if (Directory.Exists("Saving"))
+           /** if (Directory.Exists("Savings"))
             {
                 return true;
             }
             else
             {
                 return false;
-            }
+            }**/
+           return Directory.Exists("Savings");
         }
 
         //Erstellt den neuen Ordner zum Speichern der Datei
-        public void createProjectDirectory()
+        public void CreateProjectDirectory()
         {
             Directory.CreateDirectory("Savings");
 
         }
 
         //Erstellt eine Datei im Format txt mit dem übergebenem Projektnamen. 
-        public void createProjectFile()
+        public void CreateProjectFile()
         {
-            String path = "savings/" + projektName + ".txt";
+            String path = "Savings/" + projektName + ".txt";
             using (FileStream fs = File.Create(path))
             {
 

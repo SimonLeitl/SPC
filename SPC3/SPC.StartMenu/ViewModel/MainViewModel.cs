@@ -55,20 +55,20 @@ namespace SPC3.SPC.StartMenu.ViewModel
 
         }
 
-        public void changeToProjektNameEingabeView()
+        public void ChangeToProjektNameEingabeView()
         {
 
             // _projektNameEingabeViewModel = ViewModelLocator.Instance.TestView;
             setProjektNameEingabeView = _projektNameEingabeViewModel;
             CurrentPageViewModel = _projektNameEingabeViewModel;
         }
-        public void changeToStartMenuView()
+        public void ChangeToStartMenuView()
         {
             CurrentPageViewModel = _startMenuViewModel;
         }
 
-        public RelayCommand ÖffneProjektNameEingabeCommand { get; set; }
-        public RelayCommand zurückButtonCommand { get; set; }
+        public RelayCommand OeffneProjektNameEingabeCommand { get; set; }
+        public RelayCommand ZurueckButtonCommand { get; set; }
 
         public RelayCommand<StartMenuViewModelBase> ChangePageCommand { get; private set; }
 
@@ -85,8 +85,8 @@ namespace SPC3.SPC.StartMenu.ViewModel
         {
             // _projektNameEingabeView = ViewModelLocator.Instance.TestView;
 
-            ÖffneProjektNameEingabeCommand = new RelayCommand(changeToProjektNameEingabeView);
-            zurückButtonCommand = new RelayCommand(changeToStartMenuView);
+            OeffneProjektNameEingabeCommand = new RelayCommand(ChangeToProjektNameEingabeView);
+            ZurueckButtonCommand = new RelayCommand(ChangeToStartMenuView);
             ChangePageCommand = new RelayCommand<StartMenuViewModelBase>(p => ChangePageAction(p));
 
 

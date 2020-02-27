@@ -21,7 +21,7 @@
 				<RowDefinition />
 			</Grid.RowDefinitions>
 			<Button x:Name="newProjectButton" Width="auto" Height="auto" HorizontalAlignment="Stretch"
-			        VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}" Command="{Binding ÖffneProjektNameEingabeCommand}"  CommandParameter="{Binding }">
+			        VerticalAlignment="Stretch" Margin="10" Background="#067FC9" BorderBrush="{x:Null}" Command="{Binding OeffneProjektNameEingabeCommand}"  CommandParameter="{Binding }">
 				<StackPanel>
 					<Image x:Name="newProjectbutton" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform"
 					       MaxHeight="100" MaxWidth="100" Source="../Pictures/new_graphic.png" />

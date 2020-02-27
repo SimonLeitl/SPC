@@ -23,41 +23,41 @@ namespace SPC2.SPC.StartMenu.ViewModels
         public ProjektNameEingabeViewModel(String projectName)
         {
             this.projectName = projectName;
-            createNewProject();
+            CreateNewProject();
         }
 
-        public void createNewProject()
+        public void CreateNewProject()
         {
             if (checkProjectDirectory() == true)
             {
-                createProjectFile();
+                CreateProjectFile();
             }
             else
             {
-                createProjectDirectory();
-                createProjectFile();
+                CreateProjectDirectory();
+                CreateProjectFile();
             }
         }
 
         public Boolean checkProjectDirectory()
         {
-            if (Directory.Exists("Saving"))
+            /**if (Directory.Exists("Saving"))
             {
                 return true;
             }
             else
             {
                 return false;
-            }
-
+            }**/
+            return Directory.Exists("Saving");
 
         }
-        public void createProjectDirectory()
+        public void CreateProjectDirectory()
         {
             Directory.CreateDirectory("Saving");
         }
 
-        public void createProjectFile()
+        public void CreateProjectFile()
         {
             String path = "Saving/" + "projectName" + ".txt";
             using (FileStream fs = File.Create(path))
