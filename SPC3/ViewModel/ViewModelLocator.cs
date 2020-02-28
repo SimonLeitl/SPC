@@ -13,6 +13,8 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 using SPC3.Model;
+using SPC3.SPC.Editor.Model;
+using SPC3.SPC.Editor.ViewModel;
 using SPC3.SPC.StartMenu.ViewModel;
 
 namespace SPC3.ViewModel
@@ -34,6 +36,7 @@ namespace SPC3.ViewModel
             //The Views
             SimpleIoc.Default.Register<ProjektNameEingabeViewModel>();
             SimpleIoc.Default.Register<StartMenuViewModel>();
+            SimpleIoc.Default.Register<SteckdoseViewModel>();
 
 
         }
@@ -74,6 +77,17 @@ namespace SPC3.ViewModel
                 return ServiceLocator.Current.GetInstance<StartMenuViewModel>();
             }
         }
+
+        public SteckdoseViewModel steckDoseViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<SteckdoseViewModel>(); }
+        }
+
+        public LichtSchalterViewModel lichtSchalterViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<LichtSchalterViewModel>(); }
+        }
+
 
 
 

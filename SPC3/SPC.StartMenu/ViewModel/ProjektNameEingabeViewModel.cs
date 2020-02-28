@@ -4,7 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using GalaSoft.MvvmLight.Command;
+using SPC3.SPC.Editor.Views;
 
 namespace SPC3.SPC.StartMenu.ViewModel
 {
@@ -65,6 +67,15 @@ namespace SPC3.SPC.StartMenu.ViewModel
             {
 
             }
+            MainEditorWindowView mw = new MainEditorWindowView();
+            MainWindow mainWindow = new MainWindow();
+            Window Window = new Window();
+            Window.Close();
+            mainWindow.Close();
+            mw.Show();
+            
+            
         }
+     
     }
 }
