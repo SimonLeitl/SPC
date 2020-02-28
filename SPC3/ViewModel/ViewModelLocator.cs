@@ -79,12 +79,12 @@ namespace SPC3.ViewModel
             }
         }
 
-        public SteckdoseViewModel steckDoseViewModel
+        public SteckdoseViewModel SteckDoseViewModel
         {
             get { return ServiceLocator.Current.GetInstance<SteckdoseViewModel>(); }
         }
 
-        public LichtSchalterViewModel lichtSchalterViewModel
+        public LichtSchalterViewModel LichtSchalterViewModel
         {
             get { return ServiceLocator.Current.GetInstance<LichtSchalterViewModel>(); }
         }

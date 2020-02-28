@@ -10,7 +10,7 @@ namespace SPC3.SPC.Editor.Model
     {
         private string komponentenName = "Lichtschalter";
 
-        public string getKomponentenName()
+        public string GetKomponentenName()
         {
             return komponentenName;
         }

@@ -29,7 +29,6 @@
 	<DockPanel>
 		<Grid>
 			<ContentControl x:Name="Content" Content="{Binding CurrentPageViewModel}"></ContentControl>
-
-		</Grid>
+        </Grid>
 	</DockPanel>
 </Window>

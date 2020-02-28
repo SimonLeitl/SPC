@@ -10,40 +10,42 @@ namespace SPC3.SPC.Editor.Model
     abstract class LeitungenToolsModel
     {
         private String _LeitungenName;
-        public String LeitungenName{
+        private Int16 _LeitungenID;
+        private String _LeitungenGroesse;
+        private Image _LeitungenImage;
+        private double _LeitungenXPosition;
+        private double _LeitungenYPosition;
+
+        public String LeitungenName
+        {
             get => _LeitungenName;
             set => _LeitungenName = value;
         }
 
-        private Int16 _LeitungenID;
         public short LeitungenID
         {
             get => _LeitungenID;
             set => _LeitungenID = value;
         }
 
-        private String _LeitungenGroesse;
         public String LeitungenGroesse
         {
             get => _LeitungenGroesse;
             set => _LeitungenGroesse = value;
         }
 
-        private Image _LeitungenImage;
         public Image LeitungenImage
         {
             get => _LeitungenImage;
             set => _LeitungenImage = value;
         }
 
-        private double _LeitungenXPosition;
         public double LeitungenXPosition
         {
             get => _LeitungenXPosition;
             set => _LeitungenXPosition = value;
         }
 
-        private double _LeitungenYPosition;
         public double LeitungenYPosition
         {
             get => _LeitungenYPosition;

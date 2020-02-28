@@ -12,7 +12,7 @@ namespace SPC3.SPC.Editor.ViewModel
         LichtSchalterModel lichtSchalterModel = new LichtSchalterModel();
         public LichtSchalterViewModel()
         {
-            Name = lichtSchalterModel.getKomponentenName();
+            Name = lichtSchalterModel.GetKomponentenName();
         }
     }
 }

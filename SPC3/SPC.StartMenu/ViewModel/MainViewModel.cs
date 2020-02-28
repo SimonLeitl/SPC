@@ -48,10 +48,10 @@ namespace SPC3.SPC.StartMenu.ViewModel
             }
         }
 
-        public StartMenuViewModelBase setProjektNameEingabeView
+        public StartMenuViewModelBase SetProjektNameEingabeView
         {
             get { return _projektNameEingabeViewModel; }
-            set { Set(() => setProjektNameEingabeView, ref _projektNameEingabeViewModel, value); }
+            set { Set(() => SetProjektNameEingabeView, ref _projektNameEingabeViewModel, value); }
 
         }
 
@@ -59,7 +59,7 @@ namespace SPC3.SPC.StartMenu.ViewModel
         {
 
             // _projektNameEingabeViewModel = ViewModelLocator.Instance.TestView;
-            setProjektNameEingabeView = _projektNameEingabeViewModel;
+            SetProjektNameEingabeView = _projektNameEingabeViewModel;
             CurrentPageViewModel = _projektNameEingabeViewModel;
         }
         public void ChangeToStartMenuView()

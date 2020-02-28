@@ -22,7 +22,7 @@ namespace SPC3.SPC.Editor.ViewModel
 
         public KomponentenMainViewModel()
         {
-            _viewModelList.Add(ViewModelLocator.Instance.steckDoseViewModel);
+            _viewModelList.Add(ViewModelLocator.Instance.SteckDoseViewModel);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace SPC3.SPC.Editor.Model
 
         }
 
-        public string getName()
+        public string GetName()
         {
             return komponentenName;
 
