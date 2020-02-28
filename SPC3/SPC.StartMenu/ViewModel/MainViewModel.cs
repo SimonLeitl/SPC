@@ -17,8 +17,8 @@ namespace SPC3.SPC.StartMenu.ViewModel
         private RelayCommand<StartMenuViewModelBase> _changePageCommand;
         private StartMenuViewModelBase _currentPageViewModel;
         private RelayCommand<StartMenuViewModelBase> _changePage;
-        private StartMenuViewModelBase _projektNameEingabeViewModel = ViewModelLocator.Instance.projektNameEingabeViewModel;
-        private StartMenuViewModelBase _startMenuViewModel = ViewModelLocator.Instance.startMenuViewModel;
+        private StartMenuViewModelBase _projektNameEingabeViewModel = ViewModelLocator.Instance.ProjektNameEingabeViewModel;
+        private StartMenuViewModelBase _startMenuViewModel = ViewModelLocator.Instance.StartMenuViewModel;
 
         private List<StartMenuViewModelBase> _viewModelList = new List<StartMenuViewModelBase>();
 
@@ -90,7 +90,7 @@ namespace SPC3.SPC.StartMenu.ViewModel
             ChangePageCommand = new RelayCommand<StartMenuViewModelBase>(p => ChangePageAction(p));
 
 
-            _viewModelList.Add(ViewModelLocator.Instance.projektNameEingabeViewModel);
+            _viewModelList.Add(ViewModelLocator.Instance.ProjektNameEingabeViewModel);
 
 
             // _viewModelList.Add(ViewModelLocator.Instance.View3);
