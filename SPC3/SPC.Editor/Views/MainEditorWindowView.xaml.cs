@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SPC3.SPC.Editor.ViewModel;
 
 namespace SPC3.SPC.Editor.Views
 {
@@ -22,6 +23,7 @@ namespace SPC3.SPC.Editor.Views
         public MainEditorWindowView()
         {
             InitializeComponent();
+            DataContext = new KomponentenViewModel();
         }
     }
 }

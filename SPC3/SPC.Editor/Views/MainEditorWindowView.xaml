@@ -4,8 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SPC3.SPC.Editor.Views"
+        xmlns:viewmodels="clr-namespace:SPC3.SPC.Editor.ViewModel"
+        xmlns:views="clr-namespace:SPC3.SPC.Editor.Views"
         mc:Ignorable="d"
         Title="MainEditorWindowView" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate x:Name="KomponentenViewTemplate" DataType="{x:Type viewmodels:KomponentenViewModel}">
+            <views:KomponentenToolsView DataContext="{Binding}"></views:KomponentenToolsView>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -50,6 +57,7 @@
         </DockPanel>
         <DockPanel Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3">
             <Grid>
+                <ContentControl x:Name="ContentControlLeitungen" Content="{Binding LeitungenListe}"></ContentControl>
 
             </Grid>
         </DockPanel>
@@ -63,6 +71,7 @@
         </DockPanel>
         <DockPanel Grid.Column="7" Grid.Row="0" Grid.RowSpan="8">
             <Grid>
+                <ContentControl x:Name="ContentControlKomponenten" Content="{Binding}"></ContentControl>
 
             </Grid>
         </DockPanel>

@@ -16,6 +16,7 @@ using Microsoft.Practices.ServiceLocation;
 using SPC3.Model;
 using SPC3.SPC.Editor.Model;
 using SPC3.SPC.Editor.ViewModel;
+using SPC3.SPC.Editor.Views;
 using SPC3.SPC.StartMenu.ViewModel;
 
 namespace SPC3.ViewModel
@@ -88,7 +89,6 @@ namespace SPC3.ViewModel
         {
             get { return ServiceLocator.Current.GetInstance<LichtSchalterViewModel>(); }
         }
-
 
 
 

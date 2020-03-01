@@ -10,5 +10,10 @@ namespace SPC3.SPC.Editor.Model
     {
         private new String LeitungenName = "3x 2.5";
         private new int LeitungenID = 1;
+
+        public String GetLeitungenNameZweiFuenf()
+        {
+            return LeitungenName;
+        }
     }
 }
