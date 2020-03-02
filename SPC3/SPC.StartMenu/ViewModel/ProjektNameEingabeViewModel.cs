@@ -70,8 +70,8 @@ namespace SPC3.SPC.StartMenu.ViewModel
             MainEditorWindowView mw = new MainEditorWindowView();
             MainWindow mainWindow = new MainWindow();
             Window Window = new Window();
-            Window.Close();
-            mainWindow.Close();
+           // Window.Close();
+           // mainWindow.Close();
             mw.Show();
             
             

@@ -21,12 +21,12 @@
 
 			<TextBlock Text="Projektname eingeben" Grid.ColumnSpan="2" FontSize="24" TextAlignment="Center"
 			           HorizontalAlignment="Center" VerticalAlignment="Bottom" />
-			<TextBox x:Name="projektNameTextFeld" Grid.ColumnSpan="2" Grid.Row="1" DataContext="{Binding projektNameEingabeViewModel, Source={StaticResource Locator}}" Text="{Binding ProjektName}" FontSize="18"
+			<TextBox x:Name="projektNameTextFeld" Grid.ColumnSpan="2" Grid.Row="1" DataContext="{Binding ProjektNameEingabeViewModel, Source={StaticResource Locator}}" Text="{Binding ProjektName}" FontSize="18"
 			         TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Width="422"  />
 			<Button x:Name="zurückButton" Grid.Row="2" Content="Zurück" Width="94" Height="33" VerticalAlignment="Top"
 			        HorizontalAlignment="Center" Command="{Binding zurückButtonCommand}" />
 			<Button x:Name="weiterButton" Grid.Row="2" Grid.Column="1" Content="Weiter" Width="94" Height="33"
-			        VerticalAlignment="Top" HorizontalAlignment="Center" DataContext="{Binding projektNameEingabeViewModel, Source={StaticResource Locator}}" Command="{Binding newProjektCommand}"/>
+			        VerticalAlignment="Top" HorizontalAlignment="Center" DataContext="{Binding ProjektNameEingabeViewModel, Source={StaticResource Locator}}" Command="{Binding newProjektCommand}"/>
 		</Grid>
 	</Grid>
 </UserControl>
