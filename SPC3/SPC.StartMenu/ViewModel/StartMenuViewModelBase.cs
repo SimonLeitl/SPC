@@ -9,14 +9,14 @@ namespace SPC3.SPC.StartMenu.ViewModel
 {
    public class StartMenuViewModelBase : ViewModelBase
     {
-        public string _name = "";
+        public string _Name = "";
 
         public String Name
         {
-            get { return _name; }
+            get { return _Name; }
             set
             {
-                Set(() => Name, ref _name, value);
+                Set(() => Name, ref _Name, value);
             }
         }
     }

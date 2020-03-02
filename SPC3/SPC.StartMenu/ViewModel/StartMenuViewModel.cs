@@ -15,7 +15,7 @@ namespace SPC3.SPC.StartMenu.ViewModel
             Name = "StartMenuViewModel";
         }
 
-        public void openProject()
+        public void OpenProject()
         {
             
         }
