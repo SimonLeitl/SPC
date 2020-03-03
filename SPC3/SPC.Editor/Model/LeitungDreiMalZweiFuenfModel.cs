@@ -8,8 +8,8 @@ namespace SPC3.SPC.Editor.Model
 {
     class LeitungDreiMalZweiFuenfModel : LeitungenToolsModel
     {
-        private new String LeitungenName = "3x 2.5";
-        private new int LeitungenID = 1;
+        private readonly new String LeitungenName = "3x 2.5";
+        private readonly new int LeitungenID = 1;
 
         public String GetLeitungenNameZweiFuenf()
         {

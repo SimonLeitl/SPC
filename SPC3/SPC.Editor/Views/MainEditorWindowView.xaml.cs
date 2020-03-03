@@ -24,6 +24,7 @@ namespace SPC3.SPC.Editor.Views
         {
             InitializeComponent();
             DataContext = new KomponentenViewModel();
+           // DataContext = new LeitungenToolsView();
         }
     }
 }
