@@ -12,6 +12,18 @@
         <DataTemplate x:Name="KomponentenViewTemplate" DataType="{x:Type viewmodels:KomponentenViewModel}">
             <views:KomponentenToolsView DataContext="{Binding}"></views:KomponentenToolsView>
         </DataTemplate>
+        <DataTemplate x:Name="LeitungenViewTemplate" DataType="{x:Type viewmodels:LeitungenToolsViewModel}">
+            <views:LeitungenToolsView DataContext="{Binding}"></views:LeitungenToolsView>
+        </DataTemplate>
+       <!-- <DataTemplate x:Name="LegendeInfoViewTemplate" DataType="{x:Type viewmodels:LeitungenToolsViewModel}">
+            <views:LegendeInfoView DataContext="{Binding}"></views:LegendeInfoView>
+        </DataTemplate>
+        <DataTemplate x:Name="StatistikViewTemplate" DataType="{x:Type viewmodels:StatistikInfoViewModel}">
+            <views:StatistikInfoView DataContext="{Binding}"></views:StatistikInfoView>
+        </DataTemplate> -->
+        <DataTemplate x:Name="ZeichenToolsViewTemplate" DataType="{x:Type viewmodels:ZeichenToolsViewModel}">
+            <views:ZeichenToolsView DataContext="{Binding}"></views:ZeichenToolsView>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -52,12 +64,12 @@
         </DockPanel>
         <DockPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
             <Grid>
-
+                <ContentControl x:Name="ContentControlZeichenTools" Content="{Binding}"></ContentControl>
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3">
             <Grid>
-                <ContentControl x:Name="ContentControlLeitungen" Content="{Binding LeitungenListe}"></ContentControl>
+                <ContentControl x:Name="ContentControlLeitungen" Content="{Binding}"></ContentControl>
 
             </Grid>
         </DockPanel>
