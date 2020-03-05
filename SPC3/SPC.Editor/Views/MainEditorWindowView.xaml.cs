@@ -25,7 +25,21 @@ namespace SPC3.SPC.Editor.Views
             InitializeComponent();
             DataContext = new KomponentenViewModel(); 
             //new LeitungenToolsViewModel();
-           // new ZeichenToolsViewModel();
+            // new ZeichenToolsViewModel();
+            /*  DataContext = new
+              {
+                  KomponentenToolsViewModel,
+                  LeitungenToolsViewModel,
+                  ZeichenToolsViewModel
+              };
+           }
+   
+           public ZeichenToolsViewModel ZeichenToolsViewModel { get; set; }
+   
+           public LeitungenToolsViewModel LeitungenToolsViewModel { get; set; }
+   
+           public KomponentenMainViewModel KomponentenToolsViewModel { get; set; }
+       */
         }
     }
 }
