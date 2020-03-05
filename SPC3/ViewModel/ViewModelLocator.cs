@@ -39,6 +39,8 @@ namespace SPC3.ViewModel
             SimpleIoc.Default.Register<ProjektNameEingabeViewModel>();
             SimpleIoc.Default.Register<StartMenuViewModel>();
             SimpleIoc.Default.Register<SteckdoseViewModel>();
+            //SimpleIoc.Default.Register<LeitungDreiMalZweiFuenfViewModel>();
+            //SimpleIoc.Default.Register<LeitungDreiMalEinsFuenfViewModel>();
 
 
         }
@@ -88,6 +90,11 @@ namespace SPC3.ViewModel
         public LichtSchalterViewModel LichtSchalterViewModel
         {
             get { return ServiceLocator.Current.GetInstance<LichtSchalterViewModel>(); }
+        }
+
+       /* public LeitungDreiMalEinsFuenfViewModel LeitungDreiMalEinsFuenfViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<LeitungDreiMalEinsFuenfViewModel>(); }
         }
 
 

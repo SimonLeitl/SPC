@@ -10,5 +10,10 @@ namespace SPC3.SPC.Editor.ViewModel
     class LeitungDreiMalEinsFuenfViewModel : LeitungenToolsViewModel
     {
         LeitungDreiMalEinsFuenfModel LeitungDreiMalEinsFuenfModel = new LeitungDreiMalEinsFuenfModel();
+
+        public LeitungDreiMalEinsFuenfViewModel()
+        {
+            Name = LeitungDreiMalEinsFuenfModel.LeitungenName;
+        }
     }
 }

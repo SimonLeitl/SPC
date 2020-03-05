@@ -8,5 +8,11 @@ namespace SPC3.SPC.Editor.Model
 {
     class ZeichenToolTuerModel : ZeichenToolsModel
     {
+        private readonly String TuerName = "Tür";
+
+        public String GetZeichenToolTuer()
+        {
+            return TuerName;
+        }
     }
 }
