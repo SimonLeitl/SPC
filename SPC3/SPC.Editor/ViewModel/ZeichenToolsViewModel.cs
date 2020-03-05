@@ -7,7 +7,7 @@ using GalaSoft.MvvmLight;
 
 namespace SPC3.SPC.Editor.ViewModel
 {
-    class ZeichenToolsViewModel : ViewModelBase
+    public class ZeichenToolsViewModel : ViewModelBase
     {
     }
 }

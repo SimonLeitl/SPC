@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SPC3.SPC.Editor.ViewModel
 {
-    class ZeichenToolGrundrissViewModel : ZeichenToolsViewModel
+    public class ZeichenToolGrundrissViewModel : ZeichenToolsViewModel
     {
     }
 }

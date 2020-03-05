@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SPC3.SPC.Editor.ViewModel
 {
-    class LeitungDreiMalZweiFuenfViewModel : LeitungenToolsViewModel
+    public class LeitungDreiMalZweiFuenfViewModel : LeitungenToolsViewModel
     {
         LeitungDreiMalZweiFuenfModel LeitungenDreiMalZweiFuenfModel = new LeitungDreiMalZweiFuenfModel();
 

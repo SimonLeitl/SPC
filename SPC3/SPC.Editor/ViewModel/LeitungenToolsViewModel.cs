@@ -8,7 +8,7 @@ using GalaSoft.MvvmLight;
 
 namespace SPC3.SPC.Editor.ViewModel
 {
-    class LeitungenToolsViewModel : ViewModelBase 
+    public class LeitungenToolsViewModel : ViewModelBase 
     {
         public string _name;
         public string _beschreibung;
