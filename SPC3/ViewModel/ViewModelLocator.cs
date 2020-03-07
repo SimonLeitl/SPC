@@ -39,6 +39,9 @@ namespace SPC3.ViewModel
             SimpleIoc.Default.Register<ProjektNameEingabeViewModel>();
             SimpleIoc.Default.Register<StartMenuViewModel>();
             SimpleIoc.Default.Register<SteckdoseViewModel>();
+
+            SimpleIoc.Default.Register<KomponentenMainViewModel>();
+
             SimpleIoc.Default.Register<LeitungDreiMalEinsFuenfViewModel>();
             SimpleIoc.Default.Register<LeitungDreiMalZweiFuenfViewModel>();
 
@@ -100,6 +103,11 @@ namespace SPC3.ViewModel
         public LeitungDreiMalZweiFuenfViewModel LeitungDreiMalZweiFuenfViewModel
         {
             get { return ServiceLocator.Current.GetInstance<LeitungDreiMalZweiFuenfViewModel>(); }
+        }
+
+        public KomponentenMainViewModel KomponentenMainViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<KomponentenMainViewModel>(); }
         }
 
 

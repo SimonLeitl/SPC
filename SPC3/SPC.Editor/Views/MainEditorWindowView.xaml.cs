@@ -23,7 +23,7 @@ namespace SPC3.SPC.Editor.Views
         public MainEditorWindowView()
         {
             InitializeComponent();
-            DataContext = new KomponentenViewModel(); 
+           // DataContext = new KomponentenViewModel(); 
             //new LeitungenToolsViewModel();
             // new ZeichenToolsViewModel();
             /*  DataContext = new

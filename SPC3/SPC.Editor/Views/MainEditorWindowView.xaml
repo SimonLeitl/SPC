@@ -7,13 +7,15 @@
         xmlns:viewmodels="clr-namespace:SPC3.SPC.Editor.ViewModel"
         xmlns:views="clr-namespace:SPC3.SPC.Editor.Views"
         mc:Ignorable="d"
-        Title="MainEditorWindowView" Height="450" Width="800">
+        Title="MainEditorWindowView" Height="450" Width="800"
+        DataContext="{Binding KomponentenMainViewModel, Source={StaticResource Locator}}"
+        >
     <Window.Resources>
         <DataTemplate x:Name="KomponentenViewTemplate" DataType="{x:Type viewmodels:KomponentenViewModel}">
-            <views:KomponentenToolsView DataContext="{Binding}"></views:KomponentenToolsView>
+            <views:KomponentenToolsView></views:KomponentenToolsView>
         </DataTemplate>
         <DataTemplate x:Name="LeitungenViewTemplate" DataType="{x:Type viewmodels:LeitungenToolsViewModel}">
-            <views:LeitungenToolsView DataContext="{Binding}"></views:LeitungenToolsView>
+            <views:LeitungenToolsView></views:LeitungenToolsView>
         </DataTemplate>
        <!-- <DataTemplate x:Name="LegendeInfoViewTemplate" DataType="{x:Type viewmodels:LeitungenToolsViewModel}">
             <views:LegendeInfoView DataContext="{Binding}"></views:LegendeInfoView>
@@ -22,7 +24,7 @@
             <views:StatistikInfoView DataContext="{Binding}"></views:StatistikInfoView>
         </DataTemplate> -->
         <DataTemplate x:Name="ZeichenToolsViewTemplate" DataType="{x:Type viewmodels:ZeichenToolsViewModel}">
-            <views:ZeichenToolsView DataContext="{Binding}"></views:ZeichenToolsView>
+            <views:ZeichenToolsView></views:ZeichenToolsView>
         </DataTemplate>
     </Window.Resources>
     <Grid>
@@ -65,6 +67,7 @@
         <DockPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
             <Grid>
                 <ContentControl x:Name="ContentControlZeichenTools" Content="{Binding}"></ContentControl>
+                <!-- Binding  ContentZeichenToolsViewModel -->
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3">
