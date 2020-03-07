@@ -35,6 +35,8 @@ namespace SPC3.ViewModel
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<MainViewModel>();
 
+            SimpleIoc.Default.Register<EditorViewModel>();
+
             //The Views
             SimpleIoc.Default.Register<ProjektNameEingabeViewModel>();
             SimpleIoc.Default.Register<StartMenuViewModel>();
@@ -42,6 +44,7 @@ namespace SPC3.ViewModel
 
             SimpleIoc.Default.Register<KomponentenMainViewModel>();
 
+            SimpleIoc.Default.Register<LeitungenToolsViewModel>();
             SimpleIoc.Default.Register<LeitungDreiMalEinsFuenfViewModel>();
             SimpleIoc.Default.Register<LeitungDreiMalZweiFuenfViewModel>();
 
@@ -66,6 +69,11 @@ namespace SPC3.ViewModel
             {
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
+        }
+
+        public EditorViewModel EditorMain
+        {
+            get { return ServiceLocator.Current.GetInstance<EditorViewModel>(); }
         }
 
         public ProjektNameEingabeViewModel ProjektNameEingabeViewModel
@@ -95,6 +103,11 @@ namespace SPC3.ViewModel
             get { return ServiceLocator.Current.GetInstance<LichtSchalterViewModel>(); }
         }
 
+        public LeitungenToolsViewModel LeitungenToolsViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<LeitungenToolsViewModel>(); }
+        }
+
         public LeitungDreiMalEinsFuenfViewModel LeitungDreiMalEinsFuenfViewModel
         {
             get { return ServiceLocator.Current.GetInstance<LeitungDreiMalEinsFuenfViewModel>(); }
@@ -108,6 +121,11 @@ namespace SPC3.ViewModel
         public KomponentenMainViewModel KomponentenMainViewModel
         {
             get { return ServiceLocator.Current.GetInstance<KomponentenMainViewModel>(); }
+        }
+
+        public EditorMainViewModel EditorMainViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<EditorMainViewModel>(); }
         }
 
 

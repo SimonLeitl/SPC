@@ -79,6 +79,9 @@
     <Compile Include="SPC.Editor\Model\ZeichenToolGrundrissModel.cs" />
     <Compile Include="SPC.Editor\Model\ZeichenToolsModel.cs" />
     <Compile Include="SPC.Editor\Model\ZeichenToolTuerModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\EditorMainViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\EditorMainViewModelBase.cs" />
+    <Compile Include="SPC.Editor\ViewModel\EditorViewModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\KomponentenMainViewModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\KomponentenViewModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\LeitungDreiMalEinsFuenfViewModel.cs" />

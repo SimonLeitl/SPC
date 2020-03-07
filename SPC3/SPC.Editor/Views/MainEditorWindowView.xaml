@@ -8,25 +8,8 @@
         xmlns:views="clr-namespace:SPC3.SPC.Editor.Views"
         mc:Ignorable="d"
         Title="MainEditorWindowView" Height="450" Width="800"
-        DataContext="{Binding KomponentenMainViewModel, Source={StaticResource Locator}}"
+        DataContext="{Binding EditorMain, Source={StaticResource Locator}}"
         >
-    <Window.Resources>
-        <DataTemplate x:Name="KomponentenViewTemplate" DataType="{x:Type viewmodels:KomponentenViewModel}">
-            <views:KomponentenToolsView></views:KomponentenToolsView>
-        </DataTemplate>
-        <DataTemplate x:Name="LeitungenViewTemplate" DataType="{x:Type viewmodels:LeitungenToolsViewModel}">
-            <views:LeitungenToolsView></views:LeitungenToolsView>
-        </DataTemplate>
-       <!-- <DataTemplate x:Name="LegendeInfoViewTemplate" DataType="{x:Type viewmodels:LeitungenToolsViewModel}">
-            <views:LegendeInfoView DataContext="{Binding}"></views:LegendeInfoView>
-        </DataTemplate>
-        <DataTemplate x:Name="StatistikViewTemplate" DataType="{x:Type viewmodels:StatistikInfoViewModel}">
-            <views:StatistikInfoView DataContext="{Binding}"></views:StatistikInfoView>
-        </DataTemplate> -->
-        <DataTemplate x:Name="ZeichenToolsViewTemplate" DataType="{x:Type viewmodels:ZeichenToolsViewModel}">
-            <views:ZeichenToolsView></views:ZeichenToolsView>
-        </DataTemplate>
-    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -66,13 +49,17 @@
         </DockPanel>
         <DockPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
             <Grid>
-                <ContentControl x:Name="ContentControlZeichenTools" Content="{Binding}"></ContentControl>
+                <ContentControl x:Name="ContentControlZeichenTools" DataContext="{Binding BindZeichenToolsViewModel}" >
+                    <views:ZeichenToolsView/>
+                </ContentControl>
                 <!-- Binding  ContentZeichenToolsViewModel -->
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3">
             <Grid>
-                <ContentControl x:Name="ContentControlLeitungen" Content="{Binding}"></ContentControl>
+                <ContentControl x:Name="ContentControlLeitungen" DataContext="{Binding BindLeitungenToolsViewModel}">
+                    <views:LeitungenToolsView/>
+                </ContentControl>
 
             </Grid>
         </DockPanel>
@@ -86,7 +73,9 @@
         </DockPanel>
         <DockPanel Grid.Column="7" Grid.Row="0" Grid.RowSpan="8">
             <Grid>
-                <ContentControl x:Name="ContentControlKomponenten" Content="{Binding}"></ContentControl>
+                <ContentControl x:Name="ContentControlKomponenten" DataContext="{Binding KomponentenViewModel}">
+                    <views:KomponentenToolsView/>
+                </ContentControl>
 
             </Grid>
         </DockPanel>
