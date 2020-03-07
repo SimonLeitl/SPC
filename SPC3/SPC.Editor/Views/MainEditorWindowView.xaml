@@ -64,11 +64,17 @@
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="6" Grid.Row="0" Grid.RowSpan="4">
-            <Grid></Grid>
+            <Grid>
+                <ContentControl x:Name="ContentControlStatistikInfo" DataContext="{Binding StatistikInfoViewModel}">
+                    <views:StatistikInfoView/>
+                </ContentControl>
+            </Grid>
         </DockPanel>
         <DockPanel Grid.Column="6" Grid.Row="4" Grid.RowSpan="4">
             <Grid>
-
+                <ContentControl x:Name="ContentControlLegendeInfo" DataContext="{Binding LegendeInfoViewModel}">
+                    <views:LegendeInfoView/>
+                </ContentControl>
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="7" Grid.Row="0" Grid.RowSpan="8">
@@ -76,7 +82,6 @@
                 <ContentControl x:Name="ContentControlKomponenten" DataContext="{Binding KomponentenViewModel}">
                     <views:KomponentenToolsView/>
                 </ContentControl>
-
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="0" Grid.Row="2" Grid.RowSpan="6" Grid.ColumnSpan="6">
