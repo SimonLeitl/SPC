@@ -10,6 +10,8 @@
 */
 
 //using CommonServiceLocator;
+
+using System.Windows;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
@@ -52,7 +54,7 @@ namespace SPC3.ViewModel
         }
 
         private static ViewModelLocator _instance = null;
-
+        
         public static ViewModelLocator Instance
         {
             get
@@ -127,7 +129,6 @@ namespace SPC3.ViewModel
         {
             get { return ServiceLocator.Current.GetInstance<EditorMainViewModel>(); }
         }
-
 
 
         /*

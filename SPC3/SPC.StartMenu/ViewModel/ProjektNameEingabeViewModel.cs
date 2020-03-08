@@ -73,6 +73,8 @@ namespace SPC3.SPC.StartMenu.ViewModel
             Window Window = new Window();
             Window.Close();
             mainWindow.Close();
+            // mainWindow.Hide();
+           // Window.Hide();
             mw.Show();
             
             
