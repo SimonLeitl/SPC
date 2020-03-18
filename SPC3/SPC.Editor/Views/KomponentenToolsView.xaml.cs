@@ -24,5 +24,6 @@ namespace SPC3.SPC.Editor.Views
         {
             InitializeComponent();
         }
+
     }
 }

@@ -38,6 +38,9 @@ namespace SPC3.ViewModel
             SimpleIoc.Default.Register<ProjektNameEingabeViewModel>();
             SimpleIoc.Default.Register<StartMenuViewModel>();
             SimpleIoc.Default.Register<SteckdoseViewModel>();
+            SimpleIoc.Default.Register<KomponentenMainViewModel>();
+
+
 
 
         }
@@ -79,20 +82,26 @@ namespace SPC3.ViewModel
             }
         }
 
+        public KomponentenMainViewModel KomponentenMainViewModel
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<KomponentenMainViewModel>();
+            }
+        }
         public SteckdoseViewModel steckDoseViewModel
         {
             get { return ServiceLocator.Current.GetInstance<SteckdoseViewModel>(); }
         }
 
-        public LichtSchalterViewModel lichtSchalterViewModel
+       /* public LichtSchalterViewModel lichtSchalterViewModel
         {
             get { return ServiceLocator.Current.GetInstance<LichtSchalterViewModel>(); }
         }
+        
 
 
-
-
-        /*
+        
                 public View3ViewModel View3
                 {
                     get
