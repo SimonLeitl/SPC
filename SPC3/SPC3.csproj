@@ -71,12 +71,28 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="SPC.Editor\Model\KomponentenModel.cs" />
+    <Compile Include="SPC.Editor\Model\LegendeInfoModel.cs" />
+    <Compile Include="SPC.Editor\Model\LeitungDreiMalEinsFuenfModel.cs" />
+    <Compile Include="SPC.Editor\Model\LeitungDreiMalZweiFuenfModel.cs" />
+    <Compile Include="SPC.Editor\Model\LeitungenToolsModel.cs" />
     <Compile Include="SPC.Editor\Model\LichtSchalterModel.cs" />
+    <Compile Include="SPC.Editor\Model\StatistikInfoModel.cs" />
     <Compile Include="SPC.Editor\Model\SteckdoseModel.cs" />
+    <Compile Include="SPC.Editor\Model\ZeichenToolsGrundrissModel.cs" />
+    <Compile Include="SPC.Editor\Model\ZeichenToolsModel.cs" />
+    <Compile Include="SPC.Editor\Model\ZeichenToolsTuerModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\KomponentenMainViewModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\KomponentenViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\LegendeInfoViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\LeitungDreiMalEinsFuenfViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\LeitungDreiMalZweiFuenfViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\LeitungenToolsViewModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\LichtSchalterViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\StatistikInfoViewModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\SteckdoseViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\ZeichenToolsGrundrissViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\ZeichenToolsTuerViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\ZeichenToolsViewModel.cs" />
     <Compile Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs">
       <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
     </Compile>
