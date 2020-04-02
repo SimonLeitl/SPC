@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -22,6 +23,7 @@ namespace SPC3.SPC.Editor.ViewModel
     {
         private double _panelX;
         private double _panelY;
+        private ArrayList _mousePosition = new ArrayList();
 
         public double PanelX
         {
@@ -61,5 +63,32 @@ namespace SPC3.SPC.Editor.ViewModel
                 throw new ArgumentNullException(GetType().Name + " does not contain property: " + propertyName);
         }
 
+        private void Canvas_MouseDown_1(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if (e.ButtonState == MouseButtonState.Pressed)
+            {
+                _mousePosition.Add(_panelX);
+                _mousePosition.Add(_panelY);
+            }
+
+            if (e.ClickCount == 2)
+            {
+                _mousePosition.Add(_panelX);
+                _mousePosition.Add(_panelY);
+
+            }
+               
+        }
+
+       private void DrawLine() { 
+                Line line = new Line();
+
+                line.Stroke = SystemColors.WindowFrameBrush;
+                line.X1 = (double) _mousePosition[0];
+                line.Y1 = (double) _mousePosition[1];
+                line.X2 = (double) _mousePosition[2];
+                line.Y2 = (double) _mousePosition[3];
+
+        }
     }
 }
