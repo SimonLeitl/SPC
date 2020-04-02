@@ -68,9 +68,7 @@
         </DockPanel>
         <DockPanel Grid.Column="0" Grid.Row="2" Grid.RowSpan="6" Grid.ColumnSpan="6">
             <Grid>
-                <Canvas>
-
-                </Canvas>
+                <local:ZeichenFlaecheView x:Name="ZeichenFlaecheView"/>
             </Grid>
         </DockPanel>
 

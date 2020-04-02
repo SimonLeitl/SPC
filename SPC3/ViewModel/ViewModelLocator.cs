@@ -39,6 +39,7 @@ namespace SPC3.ViewModel
             SimpleIoc.Default.Register<StartMenuViewModel>();
             SimpleIoc.Default.Register<SteckdoseViewModel>();
             SimpleIoc.Default.Register<KomponentenMainViewModel>();
+            SimpleIoc.Default.Register<ZeichenFlaecheViewModel>();
 
 
 
@@ -98,17 +99,18 @@ namespace SPC3.ViewModel
         {
             get { return ServiceLocator.Current.GetInstance<LichtSchalterViewModel>(); }
         }
-        
+    
+        public View3ViewModel View3
+        {
+            get {
+                return ServiceLocator.Current.GetInstance<View3ViewModel>();
+                }
+        }*/
 
-
-        
-                public View3ViewModel View3
-                {
-                    get
-                    {
-                        return ServiceLocator.Current.GetInstance<View3ViewModel>();
-                    }
-                }*/
+       public ZeichenFlaecheViewModel ZeichenFlaecheViewModel
+       {
+           get { return ServiceLocator.Current.GetInstance<ZeichenFlaecheViewModel>(); }
+       }
 
 
         public static void Cleanup()
