@@ -17,6 +17,7 @@ using SPC3.Model;
 using SPC3.SPC.Editor.Model;
 using SPC3.SPC.Editor.ViewModel;
 using SPC3.SPC.StartMenu.ViewModel;
+using SPC3.Converters;
 
 namespace SPC3.ViewModel
 {
@@ -33,12 +34,13 @@ namespace SPC3.ViewModel
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<MainViewModel>();
-
+            SimpleIoc.Default.Register<ListToStringConverter>();
             //The Views
             SimpleIoc.Default.Register<ProjektNameEingabeViewModel>();
             SimpleIoc.Default.Register<StartMenuViewModel>();
             SimpleIoc.Default.Register<SteckdoseViewModel>();
             SimpleIoc.Default.Register<KomponentenMainViewModel>();
+            SimpleIoc.Default.Register<LichtSchalterViewModel>();
 
 
 
@@ -46,6 +48,8 @@ namespace SPC3.ViewModel
         }
 
         private static ViewModelLocator _instance = null;
+
+        
 
         public static ViewModelLocator Instance
         {
@@ -94,21 +98,32 @@ namespace SPC3.ViewModel
             get { return ServiceLocator.Current.GetInstance<SteckdoseViewModel>(); }
         }
 
-       /* public LichtSchalterViewModel lichtSchalterViewModel
+        public LichtSchalterViewModel lichtSchalterViewModel
         {
             get { return ServiceLocator.Current.GetInstance<LichtSchalterViewModel>(); }
         }
-        
+
+        public ListToStringConverter listToStringConverter
+        {
+            get { return ServiceLocator.Current.GetInstance<ListToStringConverter>(); }
+        }
+       
+
+        /* public LichtSchalterViewModel lichtSchalterViewModel
+         {
+             get { return ServiceLocator.Current.GetInstance<LichtSchalterViewModel>(); }
+         }
 
 
-        
-                public View3ViewModel View3
-                {
-                    get
-                    {
-                        return ServiceLocator.Current.GetInstance<View3ViewModel>();
-                    }
-                }*/
+
+
+                 public View3ViewModel View3
+                 {
+                     get
+                     {
+                         return ServiceLocator.Current.GetInstance<View3ViewModel>();
+                     }
+                 }*/
 
 
         public static void Cleanup()

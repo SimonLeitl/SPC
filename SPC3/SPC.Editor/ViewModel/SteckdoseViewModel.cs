@@ -13,6 +13,7 @@ namespace SPC3.SPC.Editor.ViewModel
         public SteckdoseViewModel()
         {
             Name = steckdoseModel.komponentenName;
+            Symbol = steckdoseModel.symbolPfad;
         }
     }
 }

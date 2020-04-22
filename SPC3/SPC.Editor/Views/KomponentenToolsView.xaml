@@ -4,16 +4,43 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SPC3.SPC.Editor.Views"
+			 xmlns:converters="clr-namespace:SPC3.Converters"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              DataContext="{Binding KomponentenMainViewModel, Source={StaticResource Locator}}">
-    <Grid>
+
+	<UserControl.Resources>
+		<!--<local:ListToStringConverter  x:Key="ListToStringConverter" />-->
+		<converters:ListToStringConverter x:Key="ListToStringConverter"/>
+	</UserControl.Resources>
+	<Grid>
         <DockPanel>
-            <Grid>
-                <StackPanel Orientation="Vertical">
-					<ListBox ItemsSource="{Binding ViewModelList}" />
-					<!--
-	                <ListBox>
+			<Grid>
+				
+				<StackPanel Orientation="Vertical">
+					<!--<ListBox ItemsSource="{Binding ViewModelNameList}"/>-->
+
+
+					<!--<ListBox ItemsSource="{Binding ViewModelNameList}">-->
+					<ListBox>
+
+						<ListBoxItem>
+							<StackPanel Orientation="Vertical">
+								<Image Source="{Binding viewModelSymbolList}"></Image>
+								<TextBlock Text="{Binding ViewModelNameList, Converter={StaticResource ListToStringConverter}}"></TextBlock>
+							</StackPanel>
+						</ListBoxItem>
+						<!--<ListBoxItem>
+							<TextBlock Text="{Binding ViewModelNameList}"></TextBlock>
+						</ListBoxItem>-->
+					</ListBox>
+					<!--<ListBoxItem>
+							<Image Source="{Binding imageSource}"></Image>
+						</ListBoxItem>
+					</ListBox>-->
+				
+
+					<!--  <ListBox>
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <Grid>
@@ -21,16 +48,16 @@
                                         <RowDefinition/>
                                         <RowDefinition/>
                                     </Grid.RowDefinitions>
-									<Image Grid.Row="0" VerticalAlignment="Center"></Image>
+									<Image Grid.Row="0" VerticalAlignment="Center" Source="{Binding }"></Image>
                                     Source="" {Binding KomponentenToolBild} 
-									<TextBlock Grid.Row="1" Text="test" VerticalAlignment="Center" ></TextBlock>
+									<TextBlock Grid.Row="1" Text="test" VerticalAlignment="Center" Source="{Binding ViewModelNameList}""></TextBlock>
                                      {Binding KomponentenToolName} 
                                 </Grid>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox> -->
-                </StackPanel>
-            </Grid>
-        </DockPanel>
-    </Grid>
+				</StackPanel>
+			</Grid>
+		</DockPanel>
+	 </Grid>
 </UserControl>

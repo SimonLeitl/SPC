@@ -12,7 +12,7 @@ namespace SPC3.SPC.Editor.ViewModel
     {
         public string _name;
         public string _beschreibung;
-        public Image _Image;
+        public string _symbol;
 
         public string Name
         {
@@ -20,5 +20,10 @@ namespace SPC3.SPC.Editor.ViewModel
             set { Set(() => Name, ref _name, value); }
         }
 
+        public string Symbol
+        {
+            get { return _symbol; }
+            set { Set(() => Symbol, ref _symbol, value); }
+        }
     }
 }

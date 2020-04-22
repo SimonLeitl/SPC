@@ -13,6 +13,7 @@ namespace SPC3.SPC.Editor.ViewModel
         public LichtSchalterViewModel()
         {
             Name = lichtSchalterModel.getKomponentenName();
+            Symbol = lichtSchalterModel.getSymbolPfad();
         }
     }
 }

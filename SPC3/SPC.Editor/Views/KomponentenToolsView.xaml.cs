@@ -25,5 +25,9 @@ namespace SPC3.SPC.Editor.Views
             InitializeComponent();
         }
 
+        private void TextBlock_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+
+        }
     }
 }
