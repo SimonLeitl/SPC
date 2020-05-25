@@ -7,27 +7,32 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <DockPanel>
-            <Grid>
-                <StackPanel Orientation="Horizontal">
-                    <ListBox>
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
-                                    </Grid.RowDefinitions>
-                                    <Image Grid.Row="0" VerticalAlignment="Center"></Image>
-                                    <!-- Source="" {Binding ZeichenToolBild} -->
-                                    <TextBlock Grid.Row="1" Text="test" VerticalAlignment="Center"></TextBlock>
-                                    <!-- {Binding ZeichenToolName} -->
-                                </Grid>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                </StackPanel>
-            </Grid>
-        </DockPanel>
+        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
+            <DockPanel>
+                <Grid>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock FontSize="16">Zeichen-Tools</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ListBox>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Image Grid.Row="0" VerticalAlignment="Center"></Image>
+                                        <!-- Source="" {Binding ZeichenToolBild} -->
+                                        <TextBlock Grid.Row="1" Text="test" VerticalAlignment="Center"></TextBlock>
+                                        <!-- {Binding ZeichenToolName} -->
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </Grid>
+            </DockPanel>
+        </Border>
     </Grid>
 </UserControl>

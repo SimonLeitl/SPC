@@ -8,29 +8,17 @@
              d:DesignHeight="450" d:DesignWidth="800"
              DataContext="{Binding KomponentenMainViewModel, Source={StaticResource Locator}}">
     <Grid>
-        <DockPanel>
-            <Grid>
-                <StackPanel Orientation="Vertical">
-					<ListBox ItemsSource="{Binding ViewModelList}" />
-					<!--
-	                <ListBox>
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
-                                    </Grid.RowDefinitions>
-									<Image Grid.Row="0" VerticalAlignment="Center"></Image>
-                                    Source="" {Binding KomponentenToolBild} 
-									<TextBlock Grid.Row="1" Text="test" VerticalAlignment="Center" ></TextBlock>
-                                     {Binding KomponentenToolName} 
-                                </Grid>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox> -->
-                </StackPanel>
-            </Grid>
-        </DockPanel>
+        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
+            <DockPanel>
+                <Grid>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock FontSize="16">Komponenten-Tools</TextBlock>
+                        </StackPanel>
+                        <ListBox ItemsSource="{Binding ViewModelList}" />
+                    </StackPanel>
+                </Grid>
+            </DockPanel>
+        </Border>
     </Grid>
 </UserControl>

@@ -46,13 +46,6 @@
 				</DataTemplate>
 			</ListView.ItemTemplate>
 			<ListViewItem Background="#31508E" FontWeight="Bold" FontSize="18">Projekte</ListViewItem>
-			<!-- <ListView.View>-->
-			<!--<GridView>-->
-			<!-- <GridViewColumn  Header="Projekte"/> -->
-			<!-- DisplayMemberBinding="{Binding viewProjectFiles}" -->
-			<!-- <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding CreationDate}"/> -->
-			<!-- </GridView>-->
-			<!-- </ListView.View>-->
-		</ListView>
+        </ListView>
 	</Grid>
 </UserControl>
