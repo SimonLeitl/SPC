@@ -7,27 +7,33 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <DockPanel>
-            <Grid>
+        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
+            
+
+                <Grid>
+                
                 <StackPanel Orientation="Vertical">
-                    <ListBox>
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
-                                    </Grid.RowDefinitions>
-                                    <Image Grid.Row="0" VerticalAlignment="Center"></Image>
-                                    <!--Source="" {Binding SatistikInfoBild} -->
-                                    <TextBlock Grid.Row="1" Text="test" VerticalAlignment="Center"></TextBlock>
-                                    <!-- {Binding StatistikInfoName} -->
-                                </Grid>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
+                    <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="16">Statistik-Info</TextBlock>
                 </StackPanel>
-            </Grid>
-        </DockPanel>
+                        <ListBox>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Image Grid.Row="0" VerticalAlignment="Center"></Image>
+                                        <!--Source="" {Binding SatistikInfoBild} -->
+                                        <TextBlock Grid.Row="1" Text="test" VerticalAlignment="Center"></TextBlock>
+                                        <!-- {Binding StatistikInfoName} -->
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </Grid>
+        </Border>
     </Grid>
 </UserControl>

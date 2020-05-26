@@ -45,13 +45,18 @@
     <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.3.0.19032, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <HintPath>..\packages\Expression.Blend.Sdk.1.0.2\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -77,8 +82,16 @@
     <Compile Include="SPC.Editor\ViewModel\KomponentenMainViewModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\KomponentenViewModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\LichtSchalterViewModel.cs" />
+    <Compile Include="SPC.Editor\ViewModel\MouseBehaviour.cs" />
     <Compile Include="SPC.Editor\ViewModel\SteckdoseViewModel.cs" />
+
     <Compile Include="SPC.Editor\Views\ListToStringKomponentenConverter.cs" />
+
+    <Compile Include="SPC.Editor\ViewModel\ZeichenFlaecheViewModel.cs" />
+    <Compile Include="SPC.Editor\Views\ZeichenFlaecheView.xaml.cs">
+      <DependentUpon>ZeichenFlaecheView.xaml</DependentUpon>
+    </Compile>
+
     <Compile Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs">
       <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
     </Compile>
@@ -124,6 +137,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SPC.Editor\Views\ZeichenFlaecheView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -201,11 +218,5 @@
     <Resource Include="SPC.Editor\KomponentenPictures\lichtschalter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

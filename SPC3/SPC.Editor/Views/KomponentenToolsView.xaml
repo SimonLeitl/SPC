@@ -21,25 +21,8 @@
 		</DataTemplate>
 	</UserControl.Resources>
 	<Grid>
+    <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
 		<ListBox ItemsSource="{Binding ViewModelList}" ItemTemplate="{StaticResource komponenten}"/>
-
-		<!--<DockPanel>
-			<Grid>
-				<StackPanel Orientation="Vertical">
-					<ListBox VerticalContentAlignment="Center">
-						<ListBoxItem>
-							<StackPanel Orientation="Vertical">
-								<Image Source="{Binding imageSource}"></Image>
-							</StackPanel>
-						</ListBoxItem>
-						<ListBoxItem>
-							<StackPanel Orientation="Vertical">
-								<TextBlock Text="{Binding ViewModelNameList, Converter={StaticResource ListToStringConverter}}"></TextBlock>
-							</StackPanel>
-						</ListBoxItem>
-					</ListBox>
-				</StackPanel>
-			</Grid>
-		</DockPanel>-->
+  </Border>
 	</Grid>
 </UserControl>

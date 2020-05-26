@@ -18,7 +18,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="0.3*"></RowDefinition>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -40,25 +40,32 @@
                         <Button x:Name="copy" Command="Copy" Content="Copy" />
                         <Button x:Name="paste" Command="Paste" Content="Paste" />
                     </ToolBar>
+                    <!--<ToolBar>
+                        <Button x:Name="info" Command="infos" Content="Info" />
+                        <Button x:Name="prop" Command="props" Content="Properties" />
+                        <Button x:Name="exit" Command="exite" Content="Exit" />
+                    </ToolBar>-->
                 </ToolBarTray>
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
             <Grid>
-
+                <local:ZeichenToolsView x:Name="ZeichenToolsView"/>
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3">
             <Grid>
-
+                <local:LeitungenToolsView x:Name="LeitungenToolsView"/>
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="6" Grid.Row="0" Grid.RowSpan="4">
-            <Grid></Grid>
+            <Grid>
+                <local:LegendeInfoView x:Name="LegendeInfoView"/>
+            </Grid>
         </DockPanel>
         <DockPanel Grid.Column="6" Grid.Row="4" Grid.RowSpan="4">
             <Grid>
-
+                <local:StatistikInfoView x:Name="StatistikInfoView"/>
             </Grid>
         </DockPanel>
         <DockPanel Grid.Column="7" Grid.Row="0" Grid.RowSpan="8">
@@ -68,9 +75,7 @@
         </DockPanel>
         <DockPanel Grid.Column="0" Grid.Row="2" Grid.RowSpan="6" Grid.ColumnSpan="6">
             <Grid>
-                <Canvas>
-
-                </Canvas>
+                <local:ZeichenFlaecheView x:Name="ZeichenFlaecheView"/>
             </Grid>
         </DockPanel>
 
