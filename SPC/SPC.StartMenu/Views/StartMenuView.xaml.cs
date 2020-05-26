@@ -12,62 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SPC.Start_Menu;
-using Microsoft.Win32;
-using System.IO;
-using System.Collections;
 
-namespace SPC
+namespace SPC.SPC.StartMenu.Views
 {
     /// <summary>
-    /// Interaktionslogik für SPCStartMenu.xaml
+    /// Interaktionslogik für StartMenuView.xaml
     /// </summary>
-    public partial class SPCStartMenu : Page
+    public partial class StartMenuView : UserControl
     {
-        private string[] viewProjectFiles;
-        public ArrayList arrayList;
-        private String path = "savings/";
-        public SPCStartMenu sPCStartMenu;
-        public String ProjectView { get; set; }
-
-        public SPCStartMenu()
+        public StartMenuView()
         {
             InitializeComponent();
-
-           arrayList = new ArrayList();
-           viewProjectFiles = Directory.GetFiles(path);
-           // test = new TextBlock();
-           for (int i = 1; i <= viewProjectFiles.Length; i++)
-           {
-               viewProjectFiles[i - 1].ToString();
-               arrayList.Add(viewProjectFiles[i - 1]);
-              // test.Text = viewProjectFiles[i - 1];
-
-               // viewUsedProjects.Items.Add(viewProjectFiles[i-1]);
-           };
-        
-          viewUsedProjects.ItemsSource = arrayList;
         }
-
-        private void NewProjectbutton_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            // Hier muss der Projektname der vom User ausgewählt wurde eingesetzt werden. 
-            ProjektNameEingabe pne1 = new ProjektNameEingabe();
-            NavigationService.Navigate(pne1);
-           
-        }
-
-        private void LoadProjectButton_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Text files (*txt)|*.txt";
-            if (openFileDialog.ShowDialog() == true)
-            {
-
-            }
-            
-        }
-
     }
 }
