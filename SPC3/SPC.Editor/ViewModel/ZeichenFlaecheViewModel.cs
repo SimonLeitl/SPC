@@ -107,8 +107,16 @@ namespace SPC3.SPC.Editor.ViewModel
                     mousePosition[1] = position;
                     //count++;
                     Console.WriteLine(mousePosition[1].X + " " + mousePosition[1].Y + " zweiter Punkt");
-                    LineToDraw(mousePosition);
+                    //LineToDraw(mousePosition);
+                    Line line = new Line();
 
+                    line.StrokeThickness = 3;
+                    line.Visibility = Visibility.Visible;
+                    line.Stroke = new SolidColorBrush(Colors.Black);
+                    line.X1 = mousePosition[0].X;
+                    line.Y1 = mousePosition[0].Y;
+                    line.X2 = mousePosition[1].X;
+                    line.Y2 = mousePosition[1].Y;
                     mousePosition[0] = new Point(0,0);
                     mousePosition[1] = new Point(0,0);
                 }  
@@ -146,6 +154,12 @@ namespace SPC3.SPC.Editor.ViewModel
 
             return line;
         }
+
+        public Line line { 
+            get { return line; } 
+            set {
+                OnPropertyChanged("MouseClick_ToDraw");
+            } }
         public Point point { get; set; }
         public double X1 { get; set; }
         public double Y1 { get; set; }
@@ -159,9 +173,5 @@ namespace SPC3.SPC.Editor.ViewModel
     }
 }
 
-public class LineToDraw{
-
-
-}
 
 
