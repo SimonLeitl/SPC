@@ -12,52 +12,34 @@
 	<UserControl.Resources>
 		<!--<local:ListToStringConverter  x:Key="ListToStringConverter" />-->
 		<converters:ListToStringConverter x:Key="ListToStringConverter"/>
+		<DataTemplate x:Key="komponenten">
+			<StackPanel>
+				<!--<Image Source="{Binding ViewModelSymbolList}" />-->
+				<TextBlock Text="{Binding ViewModelNameList}"/>
+				<Image Source="{Binding ViewModelSymbolList}"/>
+			</StackPanel>
+		</DataTemplate>
 	</UserControl.Resources>
 	<Grid>
-        <DockPanel>
+		<ListBox ItemsSource="{Binding ViewModelList}" ItemTemplate="{StaticResource komponenten}"/>
+
+		<!--<DockPanel>
 			<Grid>
-				
 				<StackPanel Orientation="Vertical">
-					<!--<ListBox ItemsSource="{Binding ViewModelNameList}"/>-->
-
-
-					<!--<ListBox ItemsSource="{Binding ViewModelNameList}">-->
-					<ListBox>
-
+					<ListBox VerticalContentAlignment="Center">
 						<ListBoxItem>
 							<StackPanel Orientation="Vertical">
-								<Image Source="{Binding viewModelSymbolList}"></Image>
+								<Image Source="{Binding imageSource}"></Image>
+							</StackPanel>
+						</ListBoxItem>
+						<ListBoxItem>
+							<StackPanel Orientation="Vertical">
 								<TextBlock Text="{Binding ViewModelNameList, Converter={StaticResource ListToStringConverter}}"></TextBlock>
 							</StackPanel>
 						</ListBoxItem>
-						<!--<ListBoxItem>
-							<TextBlock Text="{Binding ViewModelNameList}"></TextBlock>
-						</ListBoxItem>-->
 					</ListBox>
-					<!--<ListBoxItem>
-							<Image Source="{Binding imageSource}"></Image>
-						</ListBoxItem>
-					</ListBox>-->
-				
-
-					<!--  <ListBox>
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
-                                    </Grid.RowDefinitions>
-									<Image Grid.Row="0" VerticalAlignment="Center" Source="{Binding }"></Image>
-                                    Source="" {Binding KomponentenToolBild} 
-									<TextBlock Grid.Row="1" Text="test" VerticalAlignment="Center" Source="{Binding ViewModelNameList}""></TextBlock>
-                                     {Binding KomponentenToolName} 
-                                </Grid>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox> -->
 				</StackPanel>
 			</Grid>
-		</DockPanel>
-	 </Grid>
+		</DockPanel>-->
+	</Grid>
 </UserControl>

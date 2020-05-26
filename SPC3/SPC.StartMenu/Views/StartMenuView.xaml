@@ -37,15 +37,16 @@
 				</StackPanel>
 			</Button>
 		</Grid>
-		<ListView Grid.Column="0" x:Name="viewUsedProjects" Background="#067FC9" Margin="10">
+		<ListView Grid.Column="0" x:Name="viewUsedProjects" Background="#067FC9" Margin="10" ItemsSource="{Binding getFileList}">
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<WrapPanel>
-						<TextBlock Text="{Binding ProjektPfad}"></TextBlock>
+						<TextBlock Text="{Binding}"></TextBlock>
 					</WrapPanel>
 				</DataTemplate>
 			</ListView.ItemTemplate>
-			<ListViewItem Background="#31508E" FontWeight="Bold" FontSize="18">Projekte</ListViewItem>
+			<!--
+				<ListViewItem Background="#31508E" FontWeight="Bold" FontSize="18">Projekte</ListViewItem>-->
 			<!-- <ListView.View>-->
 			<!--<GridView>-->
 			<!-- <GridViewColumn  Header="Projekte"/> -->

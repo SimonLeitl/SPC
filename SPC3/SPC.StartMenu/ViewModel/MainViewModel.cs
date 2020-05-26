@@ -3,6 +3,11 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using SPC3.Model;
 using SPC3.ViewModel;
+using System.IO;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
 
 namespace SPC3.SPC.StartMenu.ViewModel
 {
@@ -19,6 +24,9 @@ namespace SPC3.SPC.StartMenu.ViewModel
         private RelayCommand<StartMenuViewModelBase> _changePage;
         private StartMenuViewModelBase _projektNameEingabeViewModel = ViewModelLocator.Instance.ProjektNameEingabeViewModel;
         private StartMenuViewModelBase _startMenuViewModel = ViewModelLocator.Instance.StartMenuViewModel;
+        public  ObservableCollection<string> _files = new ObservableCollection<string>();
+        public List<string> filePaths = new List<string>();
+    
 
         private List<StartMenuViewModelBase> _viewModelList = new List<StartMenuViewModelBase>();
 
@@ -78,13 +86,51 @@ namespace SPC3.SPC.StartMenu.ViewModel
 
         }
 
+        public void showProjekte()
+        {
+            string path = @"C:\Users\simonleitl\source\repos\SPC\SPC3\bin\Debug\Savings";
+            
+            ProcessDirectory(path);
+            splitString();
+        }
+        public static void ProcessFile(string path)
+        {
+            Console.WriteLine("Processed file '{0}'.", path);
+        }
+        public void ProcessDirectory(string targetDirectory)
+        {
+            // Process the list of files found in the directory.
+            string[] fileEntries = Directory.GetFiles(targetDirectory);
+            
 
+            foreach (string fileName in fileEntries)  
+            filePaths.Add(fileName);
+            
+                //ProcessFile(fileName);           
+        }
+        public void splitString()
+        {
+            for (int i = 0; i < filePaths.Count; i++){
+
+            string name = filePaths[i];
+                string[] split = Regex.Split(name, "\\");
+                _files.Add(split[split.Length-1]);
+                }
+        }
+        public ObservableCollection<string> getFileList
+        {
+            get
+            {
+                return _files;
+
+            }
+        }
 
 
         public MainViewModel()
         {
             // _projektNameEingabeView = ViewModelLocator.Instance.TestView;
-
+            showProjekte();
             OeffneProjektNameEingabeCommand = new RelayCommand(ChangeToProjektNameEingabeView);
             ZurueckButtonCommand = new RelayCommand(ChangeToStartMenuView);
             ChangePageCommand = new RelayCommand<StartMenuViewModelBase>(p => ChangePageAction(p));
@@ -96,6 +142,7 @@ namespace SPC3.SPC.StartMenu.ViewModel
             // _viewModelList.Add(ViewModelLocator.Instance.View3);
 
             _currentPageViewModel = _startMenuViewModel;
+            
         }
 
         private void ChangePageAction(StartMenuViewModelBase viewModel)

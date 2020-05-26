@@ -11,8 +11,8 @@ namespace SPC3.SPC.Editor.ViewModel
     public class KomponentenViewModel : ViewModelBase
     {
         public string _name;
-        public string _beschreibung;
         public string _symbol;
+
 
         public string Name
         {
@@ -20,10 +20,18 @@ namespace SPC3.SPC.Editor.ViewModel
             set { Set(() => Name, ref _name, value); }
         }
 
-        public string Symbol
+       public string Symbol
         {
             get { return _symbol; }
             set { Set(() => Symbol, ref _symbol, value); }
+        }
+
+        public KomponentenMainViewModel KomponentenMainViewModel
+        {
+            get => default(KomponentenMainViewModel);
+            set
+            {
+            }
         }
     }
 }
