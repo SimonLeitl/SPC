@@ -75,6 +75,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converters\ListToStringConverter.cs" />
     <Compile Include="SPC.Editor\Model\KomponentenModel.cs" />
     <Compile Include="SPC.Editor\Model\LichtSchalterModel.cs" />
     <Compile Include="SPC.Editor\Model\SteckdoseModel.cs" />
@@ -83,10 +84,14 @@
     <Compile Include="SPC.Editor\ViewModel\LichtSchalterViewModel.cs" />
     <Compile Include="SPC.Editor\ViewModel\MouseBehaviour.cs" />
     <Compile Include="SPC.Editor\ViewModel\SteckdoseViewModel.cs" />
+
+    <Compile Include="SPC.Editor\Views\ListToStringKomponentenConverter.cs" />
+
     <Compile Include="SPC.Editor\ViewModel\ZeichenFlaecheViewModel.cs" />
     <Compile Include="SPC.Editor\Views\ZeichenFlaecheView.xaml.cs">
       <DependentUpon>ZeichenFlaecheView.xaml</DependentUpon>
     </Compile>
+
     <Compile Include="SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs">
       <DependentUpon>ProjektNameEingabeView.xaml</DependentUpon>
     </Compile>
@@ -191,6 +196,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -201,17 +207,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="SPC.StartMenu\Pictures\new_graphic.png" />
     <Resource Include="SPC.StartMenu\Pictures\open_graphic.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SPC.Editor\KomponentenPictures\steckdose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SPC.Editor\KomponentenPictures\lichtschalter.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

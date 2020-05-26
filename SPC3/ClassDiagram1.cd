@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SPC3.SPC.Editor.Model.KomponentenModel" Collapsed="true">
+    <Position X="9.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAACgAAAAgAAAAAAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>SPC.Editor\Model\KomponentenModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.Editor.Model.LichtSchalterModel" Collapsed="true">
+    <Position X="8.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAACAAAAAAAAAAAAAgAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Model\LichtSchalterModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.Editor.Model.SteckdoseModel" Collapsed="true">
+    <Position X="10.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAgAAgAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Model\SteckdoseModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.Editor.ViewModel.KomponentenMainViewModel" Collapsed="true">
+    <Position X="7.75" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAYEAAAABAAAAAAgAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModel\KomponentenMainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.Editor.ViewModel.KomponentenViewModel" Collapsed="true">
+    <Position X="5.75" Y="10.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAIAAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>SPC.Editor\ViewModel\KomponentenViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="KomponentenMainViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SPC3.SPC.Editor.ViewModel.LichtSchalterViewModel" Collapsed="true">
+    <Position X="5.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModel\LichtSchalterViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.Editor.ViewModel.SteckdoseViewModel" Collapsed="true">
+    <Position X="7" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>SPC.Editor\ViewModel\SteckdoseViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.Editor.Views.KomponentenToolsView" Collapsed="true">
+    <Position X="6.25" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\KomponentenToolsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainEditorWindowView" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC3.SPC.Editor.Views.LegendeInfoView" Collapsed="true">
+    <Position X="4.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\LegendeInfoView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainEditorWindowView" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC3.SPC.Editor.Views.LeitungenToolsView" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\LeitungenToolsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainEditorWindowView" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC3.SPC.Editor.Views.MainEditorWindowView">
+    <Position X="6.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\MainEditorWindowView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC3.SPC.Editor.Views.StatistikInfoView" Collapsed="true">
+    <Position X="5.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\StatistikInfoView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainEditorWindowView" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC3.SPC.Editor.Views.ZeichenToolsView" Collapsed="true">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.Editor\Views\ZeichenToolsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainEditorWindowView" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC3.Design.DesignDataService" Collapsed="true">
+    <Position X="15.75" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.StartMenu\Design\DesignDataService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC3.Model.DataItem" Collapsed="true">
+    <Position X="18.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.StartMenu\Model\DataItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.Model.DataService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.StartMenu\Model\DataService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SPC3.SPC.StartMenu.ViewModel.MainViewModel" Collapsed="true">
+    <Position X="21.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAcAAWgAAICgAAAIAAEAAAIAEACAQAAUAAAmAA=</HashCode>
+      <FileName>SPC.StartMenu\ViewModel\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.StartMenu.ViewModel.ProjektNameEingabeViewModel" Collapsed="true">
+    <Position X="20" Y="12" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAACAFAAAgAAAAAAAAAEAAAAAABAAA=</HashCode>
+      <FileName>SPC.StartMenu\ViewModel\ProjektNameEingabeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.StartMenu.ViewModel.StartMenuViewModel" Collapsed="true">
+    <Position X="17.75" Y="12" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.StartMenu\ViewModel\StartMenuViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.StartMenu.ViewModel.StartMenuViewModelBase" Collapsed="true">
+    <Position X="19" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.StartMenu\ViewModel\StartMenuViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.SPC.StartMenu.Views.ProjektNameEingabeView" Collapsed="true">
+    <Position X="17.75" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.StartMenu\Views\ProjektNameEingabeView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC3.SPC.StartMenu.Views.StartMenuView" Collapsed="true">
+    <Position X="20.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.StartMenu\Views\StartMenuView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SPC3.ViewModel.ViewModelLocator" Collapsed="true">
+    <Position X="15" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>oABGAIAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABEAAAIA=</HashCode>
+      <FileName>ViewModel\ViewModelLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.App" Collapsed="true">
+    <Position X="22.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPC3.MainWindow" Collapsed="true">
+    <Position X="19.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SPC3.Model.IDataService" Collapsed="true">
+    <Position X="18.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPC.StartMenu\Model\IDataService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

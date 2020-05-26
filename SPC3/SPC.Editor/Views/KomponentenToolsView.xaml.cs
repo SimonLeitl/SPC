@@ -25,5 +25,17 @@ namespace SPC3.SPC.Editor.Views
             InitializeComponent();
         }
 
+        public MainEditorWindowView MainEditorWindowView
+        {
+            get => default(MainEditorWindowView);
+            set
+            {
+            }
+        }
+
+        private void TextBlock_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+
+        }
     }
 }

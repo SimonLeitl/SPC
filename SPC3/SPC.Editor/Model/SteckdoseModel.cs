@@ -5,6 +5,7 @@ using System.Net.Mime;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace SPC3.SPC.Editor.Model
 {
@@ -13,6 +14,7 @@ namespace SPC3.SPC.Editor.Model
     {
         public String komponentenName = "Steckdose";
         public String komponentenBeschreibung;
+        public String symbolPfad = @"C:\Users\simonleitl\source\repos\SPC\SPC3\SPC.Editor\KomponentenPictures\steckdose.png";
         
 
         public SteckdoseModel()
